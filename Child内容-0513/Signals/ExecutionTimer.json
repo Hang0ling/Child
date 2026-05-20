@@ -1,0 +1,8 @@
+{
+  "schema_version": 5,
+  "signal_type": "Execution Timer",
+  "timer_id": "ET-EP03-M021-R4",
+  "wait_seconds": "300",
+  "max_wait_seconds": "1800",
+  "early_resume_conditions": "平台客服回复；商家同步回复新的优惠信息"
+}

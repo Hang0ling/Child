@@ -1,0 +1,7 @@
+{
+  "schema_version": 5,
+  "signal_type": "Execution Result",
+  "execution_status": "completed",
+  "wait_status": "waiting_for_reply",
+  "risk_status": "safe"
+}

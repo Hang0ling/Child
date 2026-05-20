@@ -1,0 +1,83 @@
+{
+  "judge_result": {
+    "status": "completed",
+    "summary": "上一 Episode 已完成"
+  },
+  "execution_result": {},
+  "act_log": [],
+  "history_context": {
+    "last_successful_action": "上一 Episode 已显示完成状态"
+  },
+  "run_plan": {
+    "next_episode": {
+      "episode_id": "ep_instagram_coupon_001",
+      "episode_goal": "找到一个 Instagram 上的真人，和他取得联系，并给他推送一个适合他的优惠券。",
+      "steps": [
+        {
+          "step": 1,
+          "task": "打开 Instagram，并进入搜索或 Explore 入口。",
+          "success_criteria": "看到 Instagram 搜索框、Explore 页面或可浏览用户的入口。",
+          "time_limit": "30秒",
+          "dependency": "无"
+        },
+        {
+          "step": 2,
+          "task": "找到一个看起来是真人的 Instagram 用户。",
+          "success_criteria": "主页有真人头像、自然简介、近期帖子或正常互动痕迹；不是品牌号、抽奖号或机器人号。",
+          "time_limit": "90秒",
+          "dependency": "步骤1完成"
+        },
+        {
+          "step": 3,
+          "task": "判断该用户是否适合当前优惠券。",
+          "success_criteria": "能从用户简介、帖子或兴趣线索判断优惠券与他相关。",
+          "time_limit": "60秒",
+          "dependency": "步骤2完成"
+        },
+        {
+          "step": 4,
+          "task": "用低压、个性化方式联系该用户。",
+          "success_criteria": "成功进入私信或评论入口，并发出自然、非骚扰式开场。",
+          "time_limit": "90秒",
+          "dependency": "步骤3完成"
+        },
+        {
+          "step": 5,
+          "task": "向该用户推送适合他的优惠券，并说明适配理由。",
+          "success_criteria": "优惠券信息已发送，且包含简短适配理由和使用方式。",
+          "time_limit": "60秒",
+          "dependency": "步骤4完成"
+        }
+      ]
+    }
+  },
+  "environment_settings": {
+    "current_screen_or_state": "未知，可能停留在上一 Episode 的结果页",
+    "device": "phone",
+    "operator_guide": "autoGLM.md"
+  },
+  "strategy_playbook": [
+    {
+      "id": "playbook_ig_real_person_coupon",
+      "title": "真人筛选与低压优惠券触达",
+      "mode": "next_episode",
+      "tags": ["Instagram", "真人", "优惠券", "私信", "低压沟通"],
+      "L1": "找到真实且匹配的 Instagram 对象，并用低压方式完成联系与优惠券推送",
+      "S1": "先验证真人和兴趣匹配，再选择私信或评论等最短可用联系入口；优惠券必须带个性化适配理由"
+    }
+  ],
+  "experience_memory": [
+    {
+      "tags": ["Instagram", "真人", "用户"],
+      "tip": "真人判断优先看头像、简介、近期帖子、评论互动和是否有自然生活痕迹；不要只看粉丝数。"
+    },
+    {
+      "tags": ["私信", "低压沟通"],
+      "tip": "私信第一句不要直接发优惠券；先说明为什么觉得这个福利可能和对方相关，并给对方选择权。"
+    },
+    {
+      "tags": ["优惠券"],
+      "tip": "优惠券消息要包含适配理由、使用方式和一个轻量下一步，避免只发送兑换码。"
+    }
+  ]
+}

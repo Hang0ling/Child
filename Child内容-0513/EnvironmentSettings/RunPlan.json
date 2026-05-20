@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "id": "RP-PDD-100SKU-10EP-V5",
+    "title": "Run Plan",
+    "subtitle": "100 商品任务的 Episode 组织计划",
+    "version": 5,
+    "kind": "environment_setting"
+  },
+  "summary": [
+    "Run Plan 把 100 个目标切成 10 个 Episode。Episode 是批次容器，不改变单目标逐个判断的原则。"
+  ],
+  "sections": [
+    {
+      "title": "批次",
+      "bullets": [
+        "EP01：厨房小件，处理 001-010 号商家",
+        "EP02：收纳整理，处理 011-020 号商家",
+        "EP03：家清耗材，处理 021-030 号商家",
+        "EP04：宠物用品，处理 031-040 号商家",
+        "EP05：母婴小件，处理 041-050 号商家",
+        "EP06：服饰与袜裤，处理 051-060 号商家",
+        "EP07：数码配件，处理 061-070 号商家",
+        "EP08：美妆个护，处理 071-080 号商家",
+        "EP09：零食饮品，处理 081-090 号商家",
+        "EP10：小家居用品，处理 091-100 号商家"
+      ]
+    }
+  ],
+  "runtime_spec": {
+    "episode_count": 10,
+    "targets_per_episode": 10,
+    "total_targets": 100
+  }
+}

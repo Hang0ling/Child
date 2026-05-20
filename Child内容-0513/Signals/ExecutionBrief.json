@@ -1,0 +1,40 @@
+{
+  "schema_version": 5,
+  "signal_type": "Execution Brief",
+  "brief_id": "EB-EP03-M021-R4",
+  "episode_id": "EP03",
+  "active_target_id": "M021",
+  "round": 4,
+  "execution_command": {
+    "command_id": "EC-EP03-M021-R4",
+    "channel": "拼多多平台客服会话",
+    "action": "send_message",
+    "message": "你好，这款厨房湿巾我已经确认了页面券和商家优惠：原价 70 元，目前商家侧大概能到 52 元，离 49 元左右的预算还差一点。想请你帮我看一下，平台这边是否还有可叠加的客服补偿券、活动补贴或价格保护规则？如果有，请帮我确认金额、使用条件和是否能在当前商品页面直接使用。"
+  },
+  "execution_timer": {
+    "timer_id": "ET-EP03-M021-R4",
+    "wait_seconds": "300",
+    "max_wait_seconds": "1800",
+    "early_resume_conditions": "平台客服回复；商家同步回复新的优惠信息"
+  },
+  "soft_strategy": {
+    "tone": "温和、具体、请对方帮忙核规则",
+    "relationship_goal": "让平台客服愿意查补贴，而不是觉得用户在施压"
+  },
+  "hard_execution": {
+    "must_send_once": true,
+    "must_wait_seconds": 300,
+    "must_not_repeat": true,
+    "must_collect": [
+      "补贴金额",
+      "使用条件",
+      "叠加关系",
+      "回复摘要"
+    ]
+  },
+  "judge_result_enum": [
+    "Continuing Episode",
+    "Next Episode",
+    "Run Plan Close"
+  ]
+}

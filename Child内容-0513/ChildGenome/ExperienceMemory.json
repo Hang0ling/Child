@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "id": "EM-PDD-BARGAIN-V5",
+    "title": "Experience Memory",
+    "subtitle": "可继承的议价经验",
+    "version": 5,
+    "kind": "child_genome"
+  },
+  "summary": [
+    "Experience Memory 保存能复用的经验，不保存偶然成功的幻觉。它让 Child 下次更快识别对手、差额和转移路径。"
+  ],
+  "sections": [
+    {
+      "title": "价格经验",
+      "bullets": [
+        "差额小于 10% 时，平台补贴、店铺券和轻组合最值得尝试",
+        "差额大于 20% 时，原款硬磨通常低效，应更早问替代规格",
+        "低客单标品更依赖券和活动，高客单非标品更依赖方案设计",
+        "到手价必须以购物车或支付前页面为准"
+      ]
+    },
+    {
+      "title": "沟通经验",
+      "bullets": [
+        "第一句越具体，对方越容易脱离模板",
+        "收藏、加购、浏览同店商品是购买意向，不是交换筹码",
+        "截图只用于解释自己看到的价格，不用于压迫",
+        "对方拒绝后先分类，不立刻重复请求",
+        "客服说没权限时，下一步通常不是再求一次，而是问谁能确认规则"
+      ]
+    },
+    {
+      "title": "转移经验",
+      "bullets": [
+        "商家见顶且差额小，转平台客服",
+        "规则不清，转平台客服",
+        "利润不支持，转替代款",
+        "机器人循环，缩小问题或换入口",
+        "站外诱导，关闭目标"
+      ]
+    }
+  ],
+  "runtime_spec": {
+    "experience_cards": [
+      "gap_size_routing",
+      "one_question_per_round",
+      "real_intent_signal",
+      "refusal_classification",
+      "platform_rule_escalation"
+    ]
+  }
+}

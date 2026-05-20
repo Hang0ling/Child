@@ -1,0 +1,91 @@
+{
+  "schema_version": 6,
+  "judge_result_enum": [
+    "Continuing Episode",
+    "Next Episode",
+    "Run Plan Close"
+  ],
+  "target_outcome_enum": [
+    "success_close",
+    "partial_success_close",
+    "fail_close",
+    "blocked_close",
+    "risk_aborted"
+  ],
+  "judge_result_rules": [
+    {
+      "condition": "消息已发出且仍在 300 秒初次等待窗内",
+      "judge_result": "Continuing Episode"
+    },
+    {
+      "condition": "客服已回复但补贴金额、使用条件或叠加关系仍缺一项",
+      "judge_result": "Continuing Episode"
+    },
+    {
+      "condition": "当前目标价格未达七折，但仍存在未验证的平台券、店铺券、替代规格或活动时间",
+      "judge_result": "Continuing Episode"
+    },
+    {
+      "condition": "当前目标已达七折但缺少购物车价、支付前页面或客服确认等证据",
+      "judge_result": "Continuing Episode"
+    },
+    {
+      "condition": "当前目标已关闭但本批还有未关闭目标",
+      "judge_result": "Continuing Episode"
+    },
+    {
+      "condition": "当前目标无回复超过 1800 秒，但本批仍有其它目标可处理",
+      "judge_result": "Continuing Episode"
+    },
+    {
+      "condition": "当前目标出现拒绝，需要先分类为无权限、无利润、无活动、无替代或风险",
+      "judge_result": "Continuing Episode"
+    },
+    {
+      "condition": "当前批 10 个目标全部都有目标级 outcome，且后续 Episode 仍存在",
+      "judge_result": "Next Episode"
+    },
+    {
+      "condition": "当前批 10 个目标全部关闭，但还有至少一个目标证据字段缺失",
+      "judge_result": "Continuing Episode"
+    },
+    {
+      "condition": "当前批 10 个目标全部关闭且证据字段完整，且当前批不是 EP10",
+      "judge_result": "Next Episode"
+    },
+    {
+      "condition": "EP10 的 10 个目标全部都有目标级 outcome 且证据字段完整",
+      "judge_result": "Run Plan Close"
+    },
+    {
+      "condition": "出现站外返现、私下转账、虚构身份、威胁投诉等系统性风险并需要终止整个任务",
+      "judge_result": "Run Plan Close"
+    },
+    {
+      "condition": "执行工具持续异常导致无法继续获取页面、客服或价格证据，且重试后仍不可恢复",
+      "judge_result": "Run Plan Close"
+    }
+  ],
+  "target_outcome_rules": [
+    {
+      "outcome": "success_close",
+      "condition": "平台内可验证到手价达到七折或以下，且证据字段完整"
+    },
+    {
+      "outcome": "partial_success_close",
+      "condition": "没到七折，但得到清晰最低价、活动时间或可复用路径"
+    },
+    {
+      "outcome": "fail_close",
+      "condition": "明确拒绝，且无平台券、店铺券、替代规格、活动等待等后续路径"
+    },
+    {
+      "outcome": "blocked_close",
+      "condition": "对方要求站外、私下补差、私下返现，或工具无法继续处理单目标"
+    },
+    {
+      "outcome": "risk_aborted",
+      "condition": "继续执行会触碰虚构、威胁、骚扰、自动下单、敏感信息等风险红线"
+    }
+  ]
+}

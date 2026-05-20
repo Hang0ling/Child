@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "title": "Transition Index",
+    "kind": "strategy_playbook",
+    "version": 5
+  },
+  "edges": [
+    {
+      "from": "stage_01_batch_intake",
+      "to": "stage_02_price_baseline",
+      "when": "10 个目标都有商品名、原价口径、七折目标和初始路线。",
+      "otherwise": "缺少商品或价格时回到清单补齐。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_02_price_baseline",
+      "to": "stage_03_product_fact_check",
+      "when": "形成 original_price、target_price、current_seen_price、gap_to_target。",
+      "otherwise": "原价不可信时进入商品事实确认。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_03_product_fact_check",
+      "to": "stage_04_discount_surface_scan",
+      "when": "关键规格已确认，或明确仍需截图补证。",
+      "otherwise": "客服答非所问时用截图或复述重新校准。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_04_discount_surface_scan",
+      "to": "stage_05_stackability_check",
+      "when": "可见优惠入口已登记。",
+      "otherwise": "看不到券时问商家是否有店铺券入口。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_05_stackability_check",
+      "to": "stage_06_counterparty_map",
+      "when": "得到一条当前最低可验证价格式。",
+      "otherwise": "规则不清楚时转平台客服确认。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_06_counterparty_map",
+      "to": "stage_07_first_contact",
+      "when": "明确下一轮应该问商家、平台，还是先等。",
+      "otherwise": "机器人重复时切换更具体的问题或人工入口。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_07_first_contact",
+      "to": "stage_08_intent_signal",
+      "when": "对方开始解释价格或权限。",
+      "otherwise": "若对方只发模板，进入微问题拆解。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_08_intent_signal",
+      "to": "stage_09_merchant_floor_probe",
+      "when": "对方愿意查券、发券或推荐方案。",
+      "otherwise": "对方无权限时转替代方案或平台。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_09_merchant_floor_probe",
+      "to": "stage_10_gap_framing",
+      "when": "得到最低价、拒绝理由或新券路径。",
+      "otherwise": "模糊回复时复述当前价格式再问一次。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_10_gap_framing",
+      "to": "stage_11_option_design",
+      "when": "对方给补差、明确见顶或推荐替代款。",
+      "otherwise": "差额过大时不硬磨，进入替代规格。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_11_option_design",
+      "to": "stage_12_alternative_sku",
+      "when": "至少得到一个可尝试方案。",
+      "otherwise": "没有任何方案时进入拒绝分类。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_12_alternative_sku",
+      "to": "stage_13_evidence_pack",
+      "when": "得到替代 SKU 或确认无替代。",
+      "otherwise": "替代款不匹配时回原款关闭判断。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_13_evidence_pack",
+      "to": "stage_14_platform_rule_check",
+      "when": "关键事实有证据位置。",
+      "otherwise": "证据缺失时不能判定成功。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_14_platform_rule_check",
+      "to": "stage_15_payable_confirmation",
+      "when": "平台给出可用补贴、不可用原因或规则路径。",
+      "otherwise": "平台无补贴时进入等待或切换。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_15_payable_confirmation",
+      "to": "stage_16_wait_control",
+      "when": "价格达到目标或明确未达目标。",
+      "otherwise": "价格式不闭合时回叠加关系确认。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_16_wait_control",
+      "to": "stage_17_refusal_classify",
+      "when": "收到回复、Timer 到期或目标价值下降。",
+      "otherwise": "超时后回 Judge Core。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_17_refusal_classify",
+      "to": "stage_18_target_close_decision",
+      "when": "拒绝被归类并有下一步。",
+      "otherwise": "风险拒绝直接关闭目标。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_18_target_close_decision",
+      "to": "stage_19_episode_rollup",
+      "when": "目标得到 success、partial、fail、blocked 或 risk。",
+      "otherwise": "证据不足时继续当前 Episode。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_19_episode_rollup",
+      "to": "stage_20_run_plan_close",
+      "when": "本批全部有目标级 outcome。",
+      "otherwise": "发现漏填目标时回对应目标。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_05_stackability_check",
+      "to": "stage_14_platform_rule_check",
+      "when": "叠加规则来自平台券、补贴、价格保护，商家无法确认。",
+      "otherwise": "继续商家侧最低价探测。",
+      "priority": "high"
+    },
+    {
+      "from": "stage_09_merchant_floor_probe",
+      "to": "stage_14_platform_rule_check",
+      "when": "商家见顶且差额小于 10%。",
+      "otherwise": "差额较大时进入方案设计或替代规格。",
+      "priority": "high"
+    },
+    {
+      "from": "stage_10_gap_framing",
+      "to": "stage_12_alternative_sku",
+      "when": "差额过大或对方明确利润不支持。",
+      "otherwise": "差额小则继续补齐路径。",
+      "priority": "normal"
+    },
+    {
+      "from": "stage_16_wait_control",
+      "to": "stage_17_refusal_classify",
+      "when": "Timer 到期后仍无有效回复或收到拒绝。",
+      "otherwise": "收到有效回复则回到对应事实、券或价格阶段。",
+      "priority": "high"
+    },
+    {
+      "from": "stage_17_refusal_classify",
+      "to": "stage_18_target_close_decision",
+      "when": "无合规可行路径、站外诱导或已拿到清晰最低价。",
+      "otherwise": "按拒绝类型回到平台规则、替代规格或证据打包。",
+      "priority": "high"
+    }
+  ],
+  "forced_edges": [
+    "off_platform",
+    "risk_action",
+    "timer_expired",
+    "episode_done",
+    "run_done"
+  ]
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>进化树 Evolution Tree</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./nav.css" />
+  </head>
+  <body>
+    <div class="scanline"></div>
+    <main class="app">
+      <section class="hud-shell" id="hudShell">
+        <aside class="info-panel" aria-label="Evolution tree information">
+          <div class="title-block">
+            <h1>进化树</h1>
+            <p>Evolution Tree</p>
+          </div>
+          <div class="metric-list" id="metricList"></div>
+          <button class="detail-button" id="detailButton" type="button">详细信息 / Details</button>
+          <div class="detail-panel" id="detailPanel"></div>
+          <div class="playback-panel" aria-label="Evolution playback controls">
+            <div class="playback-title">
+              <span>进化回放</span>
+              <small>Evolution Playback</small>
+            </div>
+            <div class="playback-actions">
+              <button id="playToggle" type="button">播放 / Play</button>
+              <button id="restartPlayback" type="button">重播 / Replay</button>
+            </div>
+            <label class="playback-field">
+              <span>倍速 / Speed</span>
+              <select id="speedSelect">
+                <option value="2880" selected>*2880</option>
+                <option value="8640">*8640</option>
+                <option value="25000">*25000</option>
+              </select>
+            </label>
+            <input id="playbackSlider" type="range" min="0" max="10000" value="0" />
+            <div class="playback-time" id="playbackTime"></div>
+          </div>
+        </aside>
+
+        <section class="tree-stage" id="treeStage" aria-label="Evolution tree visualization">
+          <svg id="treeSvg" class="tree-svg" role="img" aria-label="Interactive evolution tree"></svg>
+          <svg id="trendSvg" class="trend-svg" role="img" aria-label="Score trend line chart"></svg>
+          <div class="time-readout" id="timeReadout"></div>
+          <div class="tooltip" id="tooltip" role="tooltip"></div>
+        </section>
+      </section>
+    </main>
+    <nav class="bottom-page-nav" aria-label="页面导航">
+      <div class="bottom-nav-rail">
+        <a class="is-active" href="./index.html">进化树</a>
+        <a href="./Child-流程图/index.html">流程图</a>
+        <a href="./日志查看/index.html">日志查看</a>
+        <a href="./调试台/index.html">调试台</a>
+      </div>
+    </nav>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

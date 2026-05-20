@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "id": "MS-PDD-70PCT-V5",
+    "title": "Mission Spec",
+    "version": 6
+  },
+  "objective": "100 个商品分别争取七折及以下平台内可验证到手价",
+  "success_rule": "confirmed_payable_price <= original_price * 0.7",
+  "required_target_outcome": true,
+  "allowed_success_paths": [
+    "merchant_discount",
+    "store_coupon",
+    "platform_coupon",
+    "platform_activity",
+    "price_protection",
+    "alternative_sku",
+    "bundle_or_no_gift_version"
+  ],
+  "forbidden_paths": [
+    "auto_order",
+    "off_platform_cashback",
+    "fabricated_identity_or_order",
+    "threat_or_spam"
+  ]
+}

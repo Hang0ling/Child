@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>调试台 Debug Console</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../nav.css" />
+  </head>
+  <body>
+    <main class="debug-stage" aria-label="调试台界面">
+      <div class="debug-edge top-left"></div>
+      <div class="debug-edge top-right"></div>
+      <div class="debug-edge bottom-left"></div>
+      <div class="debug-edge bottom-right"></div>
+
+      <section class="left-stack">
+        <article class="debug-card definition-card">
+          <header>
+            <button class="module-select" id="moduleToggle" type="button" aria-expanded="false">
+              <span class="chip-icon grid-icon" aria-hidden="true"></span>
+              <b id="moduleName">合成LLM</b>
+              <i>∨</i>
+            </button>
+            <time id="updatedAt">最近更新：2026/5/18 15:38</time>
+          </header>
+          <div class="module-menu" id="moduleMenu"></div>
+          <div class="definition-copy" id="definitionCopy"></div>
+        </article>
+
+        <article class="debug-card io-card">
+          <header>
+            <button class="module-select compact" type="button">
+              <span class="chip-icon input-icon" aria-hidden="true"></span>
+              <b>输入</b>
+              <i>∨</i>
+            </button>
+          </header>
+          <div class="short-copy editable-copy" id="inputCopy" contenteditable="true">
+            <p>这里是一个统一的输入测试用例。也可以手动编辑。也有多个版本。</p>
+            <p>这里是一个统一的输入测试用例。也可以手动编辑。也有多个版本。</p>
+            <p>这里是一个统一的输入测试用例。也可以手动编辑。也有多个版本。</p>
+          </div>
+        </article>
+
+        <article class="debug-card output-card">
+          <header>
+            <button class="module-select compact" type="button">
+              <span class="chip-icon output-icon" aria-hidden="true"></span>
+              <b>输出</b>
+              <i>∨</i>
+            </button>
+            <span class="header-note">运行的信息，比如运行时间等。</span>
+          </header>
+          <div class="short-copy" id="outputCopy">
+            <p>这里是右边程序产生的真实的输出结果。</p>
+            <p>这里是右边程序产生的真实的输出结果。</p>
+            <p>这里是右边程序产生的真实的输出结果。</p>
+            <p>这里是右边程序产生的真实的输出结果。</p>
+          </div>
+        </article>
+
+        <article class="debug-card check-card">
+          <header>
+            <button class="module-select compact" type="button">
+              <span class="chip-icon check-icon" aria-hidden="true"></span>
+              <b>智能检测</b>
+            </button>
+            <span class="loading-dots">•••••</span>
+          </header>
+          <div class="check-list" id="checkList"></div>
+        </article>
+      </section>
+
+      <aside class="date-rail frame-panel" aria-label="版本日期">
+        <label class="debug-search">
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="versionSearch" type="search" placeholder="搜索" />
+        </label>
+        <div class="date-list" id="dateList"></div>
+      </aside>
+
+      <section class="version-panel frame-panel" aria-label="版本内容">
+        <header class="panel-title">
+          <span class="doc-icon" aria-hidden="true"></span>
+          <div>
+            <h1>版本内容</h1>
+            <small>VERSION CONTENT</small>
+          </div>
+        </header>
+        <div class="long-copy" id="versionCopy"></div>
+      </section>
+
+      <section class="current-panel frame-panel" aria-label="当前测试内容">
+        <header class="panel-title">
+          <span class="doc-icon code-icon" aria-hidden="true"></span>
+          <div>
+            <h1>当前测试内容</h1>
+            <small>CURRENT TEST CONTENT</small>
+          </div>
+        </header>
+        <div class="long-copy test-copy" id="testCopy" contenteditable="true"></div>
+        <footer>
+          <span id="testStatus">当前内容仍未保存</span>
+          <button id="runTest" type="button">运行测试</button>
+          <button id="saveTest" class="primary" type="button">保存并发布</button>
+        </footer>
+      </section>
+    </main>
+
+    <nav class="bottom-page-nav" aria-label="页面导航">
+      <div class="bottom-nav-rail">
+        <a href="../index.html">进化树</a>
+        <a href="../Child-流程图/index.html">流程图</a>
+        <a href="../日志查看/index.html">日志查看</a>
+        <a class="is-active" href="./index.html">调试台</a>
+      </div>
+    </nav>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

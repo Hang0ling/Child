@@ -1,0 +1,11 @@
+{
+  "schema_version": 5,
+  "signal_type": "Judge Result",
+  "allowed_decisions": [
+    "Continuing Episode",
+    "Next Episode",
+    "Run Plan Close"
+  ],
+  "decision": "Continuing Episode",
+  "reason": "消息已发出且仍在等待窗口内。"
+}

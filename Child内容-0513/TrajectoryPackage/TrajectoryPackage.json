@@ -1,0 +1,37 @@
+{
+  "schema_version": 5,
+  "package_type": "trajectory_template",
+  "judge_result_enum": [
+    "Continuing Episode",
+    "Next Episode",
+    "Run Plan Close"
+  ],
+  "target_level_outcome_enum": [
+    "success_close",
+    "partial_success_close",
+    "fail_close",
+    "blocked_close",
+    "risk_aborted"
+  ],
+  "episode_files": [
+    "TrajectoryPackage/EP01.md",
+    "TrajectoryPackage/EP02.md",
+    "TrajectoryPackage/EP03.md",
+    "TrajectoryPackage/EP04.md",
+    "TrajectoryPackage/EP05.md",
+    "TrajectoryPackage/EP06.md",
+    "TrajectoryPackage/EP07.md",
+    "TrajectoryPackage/EP08.md",
+    "TrajectoryPackage/EP09.md",
+    "TrajectoryPackage/EP10.md"
+  ],
+  "required_columns": [
+    "target_id",
+    "product",
+    "original_price",
+    "target_price",
+    "evidence",
+    "target_outcome",
+    "judge_result"
+  ]
+}

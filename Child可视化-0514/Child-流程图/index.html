@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Genome Flow</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../nav.css" />
+  </head>
+  <body>
+    <a class="back-link" href="../index.html" aria-label="返回进化树界面">
+      <span aria-hidden="true">‹</span>
+      <b>返回</b>
+    </a>
+    <main class="stage" id="stage" aria-label="Child Genome workflow animation">
+      <div class="frame frame-top"></div>
+      <div class="frame frame-bottom"></div>
+      <div class="frame frame-left"></div>
+      <div class="frame frame-right"></div>
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div>
+      <div class="corner corner-br"></div>
+
+      <section class="status-panel">
+        <div class="status-row run-row">
+          <div class="status-label">
+            <span class="line-icon plan-icon"></span>
+            <span>运行计划 / Run Plan</span>
+          </div>
+          <div class="run-segments" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+        <div class="status-row episode-row">
+          <div class="status-label">
+            <span class="line-icon episode-icon"></span>
+            <span>小节 / Episode</span>
+          </div>
+          <div class="episode-bar">
+            <div class="episode-fill" id="episodeFill"></div>
+            <span class="episode-percent" id="episodePercent">0%</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel child-genome">
+        <h2><span class="panel-mark genome-mark"></span>孩子基因组 / Child Genome</h2>
+        <div class="genome-grid">
+          <article class="micro-card source-card dna-source" data-glow="dna" data-log-topic="core-gene">
+            <h3>核心基因<br /><small>DNA</small></h3>
+            <div class="dna-helix" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </article>
+          <article class="micro-card source-card strategy-source wide" data-glow="strategy" data-log-topic="strategy-playbook">
+            <h3>策略手册<br /><small>Strategy Playbook</small></h3>
+            <ul class="dot-list">
+              <li><span></span>长期策略<br /><small>Long Term Strategy Graph</small></li>
+              <li><span></span>短期索引<br /><small>Transition Index</small></li>
+              <li><span></span>短期策略<br /><small>Short Term Strategy Graph</small></li>
+              <li><span></span>选定策略<br /><small>Selected Strategy</small></li>
+            </ul>
+          </article>
+          <article class="micro-card source-card memory-source" data-glow="memory" data-log-topic="experience-memory">
+            <h3>经验记忆<br /><small>Experience Memory</small></h3>
+            <div class="memory-state">
+              <span></span>
+              <p>选定经验<br /><small>Selected Experience</small></p>
+            </div>
+            <div class="mini-bars">
+              <i></i><i></i><i></i><i></i>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel env-settings">
+        <h2><span class="panel-mark env-mark"></span>环境配置 / Environment Settings</h2>
+        <div class="tile-grid env-grid">
+          <article class="signal-tile" data-log-topic="prior-knowledge">
+            <span class="tile-icon brain-icon"></span>
+            <b>先验知识</b>
+            <small>Prior Knowledge</small>
+          </article>
+          <article class="signal-tile" data-log-topic="mission-spec">
+            <span class="tile-icon spec-icon"></span>
+            <b>任务规格</b>
+            <small>Mission Spec</small>
+          </article>
+          <article class="signal-tile" data-log-topic="risk-policy">
+            <span class="tile-icon shield-icon"></span>
+            <b>风险制度</b>
+            <small>Risk Policy</small>
+          </article>
+          <article class="signal-tile" data-log-topic="closure-policy">
+            <span class="tile-icon flag-icon"></span>
+            <b>结束制度</b>
+            <small>Closure Policy</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel signals">
+        <h2><span class="panel-mark signal-mark"></span>信号 / Signals</h2>
+        <div class="tile-grid signals-grid">
+          <article class="signal-tile double" data-log-topic="execution-brief">
+            <b>执行说明</b>
+            <small>Execution Brief</small>
+            <span class="mini-command">▶ 执行命令</span>
+            <span class="mini-command">◷ 执行计时</span>
+          </article>
+          <article class="signal-tile history-signal" data-log-topic="history-context">
+            <span class="tile-icon stack-icon"></span>
+            <b>历史信息</b>
+            <small>History Context</small>
+          </article>
+          <article class="signal-tile" data-log-topic="opponent-state">
+            <span class="tile-icon opponent-icon"></span>
+            <b>对手状态</b>
+            <small>Opponent State</small>
+          </article>
+          <article class="signal-tile" data-log-topic="execution-result">
+            <span class="tile-icon result-icon"></span>
+            <b>执行结果</b>
+            <small>Execution Result</small>
+          </article>
+          <article class="signal-tile think-signal" data-log-topic="think-log">
+            <span class="tile-icon brain-icon"></span>
+            <b>思考日志</b>
+            <small>Think Log</small>
+          </article>
+          <article class="signal-tile act-signal" data-log-topic="act-log">
+            <span class="tile-icon run-icon"></span>
+            <b>行为日志</b>
+            <small>Act Log</small>
+          </article>
+          <article class="signal-tile trajectory-signal" data-log-topic="trajectory-package">
+            <span class="tile-icon nodes-icon"></span>
+            <b>轨迹追踪</b>
+            <small>Trajectory Package</small>
+          </article>
+          <article class="signal-tile judge-signal" data-log-topic="judge-result">
+            <span class="tile-icon gavel-icon"></span>
+            <b>评判结果</b>
+            <small>Judge Result</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel decision-core">
+        <h2><span class="panel-mark decision-mark"></span>决策核 / Decision Core</h2>
+        <div class="decision-layout">
+          <article class="decision-box strategy-box">
+            <h3>策略手册 <small>/ Strategy Playbook</small></h3>
+            <p class="debug-link" data-debug-topic="long-term-strategy">长期策略图 / Long Term Strategy Graph</p>
+            <svg class="strategy-map long-map" viewBox="0 0 250 130" aria-hidden="true" data-debug-topic="long-term-strategy">
+              <path d="M20 78 L54 50 L92 76 L132 64 L172 36 L220 56" />
+              <path d="M54 50 L70 104 L132 64 L146 105 L220 56" />
+              <path d="M70 104 L110 88 L146 105 L184 88 L220 56" />
+              <circle class="node n1" cx="20" cy="78" r="8" />
+              <circle class="node n2" cx="54" cy="50" r="8" />
+              <circle class="node n3" cx="70" cy="104" r="8" />
+              <circle class="node n4" cx="92" cy="76" r="8" />
+              <circle class="node n5" cx="132" cy="64" r="8" />
+              <circle class="node n6" cx="146" cy="105" r="8" />
+              <circle class="node n7" cx="172" cy="36" r="8" />
+              <circle class="node selected-node" cx="184" cy="88" r="10" />
+              <circle class="node n9" cx="220" cy="56" r="8" />
+            </svg>
+            <span class="choice-badge transition-badge" data-debug-topic="transition-index">转移索引<br /><small>Transition Index</small></span>
+            <p class="debug-link" data-debug-topic="short-term-strategy">短期策略图 / Short Term Strategy Graph</p>
+            <svg class="strategy-map short-map" viewBox="0 0 250 118" aria-hidden="true" data-debug-topic="short-term-strategy">
+              <path d="M30 74 L66 38 L110 62 L150 30 L190 50 L224 80" />
+              <path d="M66 38 L86 94 L150 30 L164 92 L224 80" />
+              <path d="M30 74 L86 94 L128 78 L164 92 L190 50" />
+              <circle class="warm-node" cx="30" cy="74" r="8" />
+              <circle class="warm-node" cx="66" cy="38" r="8" />
+              <circle class="warm-node" cx="86" cy="94" r="8" />
+              <circle class="warm-node" cx="110" cy="62" r="8" />
+              <circle class="warm-node" cx="150" cy="30" r="8" />
+              <circle class="warm-node selected-node" cx="164" cy="92" r="10" />
+              <circle class="warm-node" cx="190" cy="50" r="8" />
+              <circle class="warm-node" cx="224" cy="80" r="8" />
+            </svg>
+            <span class="choice-badge selected-badge" data-debug-topic="selected-strategy">选定策略<br /><small>Selected Strategy</small></span>
+          </article>
+
+          <article class="decision-box experience-box" data-debug-topic="experience-memory">
+            <h3>经验记忆 <small>/ Experience Memory</small></h3>
+            <p>选定经验 / Selected Experience</p>
+            <div class="memory-bars decision-memory">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel agent-panel">
+        <h2><span class="panel-mark agent-mark"></span>Agent</h2>
+        <div class="agent-grid">
+          <article class="agent-card selected-strategy" data-debug-topic="selected-strategy">
+            <svg viewBox="0 0 82 52" aria-hidden="true">
+              <path d="M10 38 L24 18 L44 30 L62 12 L74 28" />
+              <path d="M24 18 L30 44 L44 30 L58 42 L74 28" />
+              <circle cx="10" cy="38" r="4" /><circle cx="24" cy="18" r="4" />
+              <circle cx="30" cy="44" r="4" /><circle cx="44" cy="30" r="4" />
+              <circle cx="62" cy="12" r="4" /><circle cx="74" cy="28" r="4" />
+            </svg>
+            <b>选定策略</b>
+            <small>Selected Strategy</small>
+          </article>
+          <article class="agent-card agent-memory" data-debug-topic="experience-memory">
+            <b>经验记忆</b>
+            <small>Experience Memory</small>
+            <div class="green-bars"><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="agent-card agent-run" data-debug-topic="run-plan">
+            <b>运行计划</b>
+            <small>Run Plan</small>
+            <div class="tiny-plan"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="agent-card compact" data-debug-topic="core-gene">
+            <span class="mini-dna"></span>
+            <b>核心基因</b>
+            <small>DNA</small>
+          </article>
+          <article class="agent-card compact" data-debug-topic="history-context">
+            <span class="tile-icon stack-icon"></span>
+            <b>历史信息</b>
+            <small>History Context</small>
+          </article>
+          <article class="agent-card compact" data-debug-topic="environment-settings">
+            <span class="tile-icon shield-icon"></span>
+            <b>环境配置</b>
+            <small>Environment Settings</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel execution-core">
+        <h2><span class="panel-mark execution-mark"></span>执行核 / Execution Core <small>器官 / Organs</small></h2>
+        <div class="lanes">
+          <article class="execution-lane lane-1" style="--loops: 10; --lane-delay: 0s">
+            <div class="organ openclaw" data-debug-topic="openclaw">
+              <span class="organ-icon claw-icon"></span>
+              <b>Openclaw</b>
+            </div>
+            <div class="lane-track"></div>
+            <div class="organ autoglm" data-debug-topic="autoglm">
+              <span class="organ-icon glm-icon"></span>
+              <b>AutoGLM</b>
+            </div>
+            <div class="organ phone" data-debug-topic="phone">
+              <span class="organ-icon phone-icon"></span>
+              <b>手机</b><small>Phone</small>
+            </div>
+            <div class="organ timer" data-debug-topic="timer">
+              <span class="organ-icon timer-icon"><i></i></span>
+              <b>计时器</b><small>Timer</small>
+            </div>
+          </article>
+          <article class="execution-lane lane-2" style="--loops: 8; --lane-delay: .45s">
+            <div class="organ openclaw" data-debug-topic="openclaw">
+              <span class="organ-icon claw-icon"></span>
+              <b>Openclaw</b>
+            </div>
+            <div class="lane-track"></div>
+            <div class="organ autoglm" data-debug-topic="autoglm">
+              <span class="organ-icon glm-icon"></span>
+              <b>AutoGLM</b>
+            </div>
+            <div class="organ phone" data-debug-topic="phone">
+              <span class="organ-icon phone-icon"></span>
+              <b>手机</b><small>Phone</small>
+            </div>
+            <div class="organ timer" data-debug-topic="timer">
+              <span class="organ-icon timer-icon"><i></i></span>
+              <b>计时器</b><small>Timer</small>
+            </div>
+          </article>
+          <article class="execution-lane lane-3" style="--loops: 12; --lane-delay: .9s">
+            <div class="organ openclaw" data-debug-topic="openclaw">
+              <span class="organ-icon claw-icon"></span>
+              <b>Openclaw</b>
+            </div>
+            <div class="lane-track"></div>
+            <div class="organ autoglm" data-debug-topic="autoglm">
+              <span class="organ-icon glm-icon"></span>
+              <b>AutoGLM</b>
+            </div>
+            <div class="organ phone" data-debug-topic="phone">
+              <span class="organ-icon phone-icon"></span>
+              <b>手机</b><small>Phone</small>
+            </div>
+            <div class="organ timer" data-debug-topic="timer">
+              <span class="organ-icon timer-icon"><i></i></span>
+              <b>计时器</b><small>Timer</small>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel judge-core">
+        <h2><span class="panel-mark judge-mark"></span>评判核 / Judge Core <small>器官 / Organs</small></h2>
+        <article class="judge-result" data-debug-topic="judge-result">
+          <span class="big-gavel"></span>
+          <b>评判结果 / Judge Result</b>
+        </article>
+        <div class="choices">
+          <article class="choice-card continue-choice" data-debug-topic="continuing-episode">
+            <b>继续当前节</b>
+            <small>Continuing Episode</small>
+            <span class="choice-icon">▷▷</span>
+          </article>
+          <article class="choice-card next-choice" data-debug-topic="next-episode">
+            <b>下一节</b>
+            <small>Next Episode</small>
+            <span class="choice-icon">▷▷</span>
+          </article>
+          <article class="choice-card close-choice" data-debug-topic="run-plan-close">
+            <b>结束</b>
+            <small>Run Plan Close</small>
+            <span class="stop-icon"></span>
+          </article>
+        </div>
+        <article class="summarizer" data-debug-topic="summarizer">
+          <span class="summary-icon"><i></i><i></i><i></i></span>
+          <b>总结块</b>
+          <small>Summarizer</small>
+        </article>
+      </section>
+
+      <svg class="beam-layer" viewBox="0 0 1280 832" aria-hidden="true">
+        <defs>
+          <linearGradient id="beamGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1280" y2="0">
+            <stop offset="0" stop-color="#5b2100" stop-opacity=".12" />
+            <stop offset=".62" stop-color="#ff7b1b" stop-opacity=".28" />
+            <stop offset="1" stop-color="#ffd17a" stop-opacity=".76" />
+          </linearGradient>
+          <linearGradient id="beamGradientReverse" gradientUnits="userSpaceOnUse" x1="1280" y1="0" x2="0" y2="0">
+            <stop offset="0" stop-color="#5b2100" stop-opacity=".12" />
+            <stop offset=".62" stop-color="#ff7b1b" stop-opacity=".28" />
+            <stop offset="1" stop-color="#ffd17a" stop-opacity=".76" />
+          </linearGradient>
+          <linearGradient id="envJudgeCone" gradientUnits="userSpaceOnUse" x1="724" y1="326" x2="1006" y2="444">
+            <stop offset="0" stop-color="#7a2b00" stop-opacity=".12" />
+            <stop offset=".55" stop-color="#ff7b1b" stop-opacity=".34" />
+            <stop offset="1" stop-color="#ffd17a" stop-opacity=".9" />
+          </linearGradient>
+          <marker id="beamStart" markerWidth="18" markerHeight="18" refX="3" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0 3 L18 9 L0 15 Z" fill="#ff7b1b" opacity=".2" />
+          </marker>
+          <marker id="beamEnd" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+            <circle cx="3.5" cy="3.5" r="2.4" fill="#ffd17a" opacity=".82" />
+          </marker>
+          <filter id="beamGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <path class="beam source-beam" d="M78 318 C78 366 72 424 68 466" />
+        <path class="beam source-beam" d="M204 318 C186 384 112 474 72 560" />
+        <path class="beam source-beam" d="M364 318 C338 348 316 382 310 418" />
+        <path class="beam source-beam green-beam" d="M850 313 C756 326 556 326 464 432" />
+        <path class="beam-cone env-judge-cone" d="M724 315 C812 348 924 396 1007 438 C914 426 807 390 724 339 Z" />
+        <path class="beam env-judge-beam" d="M724 327 C810 360 912 404 1002 444" />
+
+        <path class="beam decision-agent-beam" d="M98 618 L98 642" />
+        <path class="beam decision-agent-beam" d="M170 618 L170 642" />
+        <path class="beam decision-agent-beam" d="M238 618 L238 642" />
+        <path class="beam decision-agent-beam" d="M318 618 L318 642" />
+        <path class="beam decision-agent-beam" d="M389 618 L389 642" />
+
+        <path class="beam agent-execution-beam lane-one-beam" d="M110 720 C250 722 478 438 552 438" />
+        <path class="beam agent-execution-beam lane-two-beam" d="M250 720 C380 690 478 568 552 568" />
+        <path class="beam agent-execution-beam lane-three-beam" d="M390 720 C465 720 480 698 552 698" />
+
+        <path class="beam organ-log-beam think-beam" d="M552 406 C660 256 888 206 1032 206" />
+        <path class="beam organ-log-beam think-beam" d="M552 537 C680 318 898 238 1032 206" />
+        <path class="beam organ-log-beam think-beam" d="M552 667 C696 382 910 270 1032 206" />
+        <path class="beam organ-log-beam act-beam" d="M642 406 C760 276 980 240 1096 208" />
+        <path class="beam organ-log-beam act-beam" d="M642 537 C780 334 996 264 1096 208" />
+        <path class="beam organ-log-beam act-beam" d="M642 667 C800 400 1010 286 1096 208" />
+
+        <path class="beam lane-done-beam lane1-done-beam" d="M552 438 C730 438 890 476 1000 486" />
+        <path class="beam lane-done-beam lane2-done-beam" d="M552 568 C730 568 890 522 1008 486" />
+        <path class="beam lane-done-beam lane3-done-beam" d="M552 698 C730 698 890 584 1016 486" />
+
+        <path class="beam judge-choice-beam continue-beam" d="M1000 486 C980 490 958 498 956 508" />
+        <path class="beam judge-choice-beam next-beam" d="M1008 486 C1030 492 1062 500 1064 508" />
+        <path class="beam judge-choice-beam close-beam" d="M1016 486 C1076 498 1172 504 1174 508" />
+        <path class="beam return-beam reverse-beam" d="M956 630 C850 666 620 650 438 492" />
+        <path class="beam next-return-beam reverse-beam" d="M1064 630 C910 690 650 660 438 492" />
+        <path class="beam close-summary-beam" d="M1174 630 L1174 674" />
+        <path class="beam summary-trajectory-beam green-beam" d="M1112 674 C1098 560 1138 410 1144 314" />
+      </svg>
+
+      <div class="flow-dot global-dot dot-a"></div>
+      <div class="flow-dot global-dot dot-b"></div>
+      <div class="flow-dot global-dot dot-c"></div>
+    </main>
+    <nav class="bottom-page-nav" aria-label="页面导航">
+      <div class="bottom-nav-rail">
+        <a href="../index.html">进化树</a>
+        <a class="is-active" href="../Child-流程图/index.html">流程图</a>
+        <a href="../日志查看/index.html">日志查看</a>
+        <a href="../调试台/index.html">调试台</a>
+      </div>
+    </nav>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

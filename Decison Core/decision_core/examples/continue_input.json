@@ -1,0 +1,109 @@
+{
+  "judge_result": {
+    "status": "interrupted",
+    "failed_reason": "上一轮已经完成步骤1-5，但步骤6最终确认尚未完成。",
+    "interrupted_at": 6
+  },
+  "execution_result": {
+    "completed_steps": [1, 2, 3, 4, 5],
+    "current_screen_or_state": "疑似停留在 Instagram 私信发送后的会话页"
+  },
+  "act_log": [
+    {
+      "step": 5,
+      "action": "发送优惠券信息和适配理由",
+      "status": "success"
+    },
+    {
+      "step": 6,
+      "action": "准备确认发送结果",
+      "status": "interrupted"
+    }
+  ],
+  "history_context": {
+    "target_user_state": {
+      "target_user_identifier": "@example_real_user",
+      "summary": "目标用户已被判断为真人且优惠券与其主页兴趣相关；上一轮已经向该用户发送优惠券信息，现在只需要确认发送是否成功。",
+      "evidence": [
+        "主页有真人头像和自然简介",
+        "近期帖子显示与优惠券主题相关的兴趣",
+        "上一轮已完成个性化开场和优惠券发送"
+      ],
+      "contact_status": "已进入私信会话并发送优惠券消息",
+      "coupon_status": "待确认是否成功送达"
+    },
+    "current_episode": {
+      "episode_id": "ep_instagram_coupon_001",
+      "episode_goal": "找到一个 Instagram 上的真人，和他取得联系，并给他推送一个适合他的优惠券。",
+      "steps": [
+        {
+          "step": 1,
+          "task": "打开 Instagram，并进入搜索或 Explore 入口。",
+          "success_criteria": "看到 Instagram 搜索框、Explore 页面或可浏览用户的入口。",
+          "time_limit": "30秒",
+          "dependency": "无"
+        },
+        {
+          "step": 2,
+          "task": "找到一个看起来是真人的 Instagram 用户。",
+          "success_criteria": "主页有真人头像、自然简介、近期帖子或正常互动痕迹。",
+          "time_limit": "90秒",
+          "dependency": "步骤1完成"
+        },
+        {
+          "step": 3,
+          "task": "判断该用户是否适合当前优惠券。",
+          "success_criteria": "能判断优惠券与用户兴趣或需求相关。",
+          "time_limit": "60秒",
+          "dependency": "步骤2完成"
+        },
+        {
+          "step": 4,
+          "task": "用低压、个性化方式联系该用户。",
+          "success_criteria": "成功进入私信或评论入口，并发出自然开场。",
+          "time_limit": "90秒",
+          "dependency": "步骤3完成"
+        },
+        {
+          "step": 5,
+          "task": "向该用户推送适合他的优惠券，并说明适配理由。",
+          "success_criteria": "优惠券信息已发送，且包含简短适配理由和使用方式。",
+          "time_limit": "60秒",
+          "dependency": "步骤4完成"
+        },
+        {
+          "step": 6,
+          "task": "确认优惠券消息已经发出，并记录目标用户和触达方式。",
+          "success_criteria": "能明确判断消息已发送；若发送受限，则记录限制原因和当前页面状态。",
+          "time_limit": "30秒",
+          "dependency": "步骤5完成"
+        }
+      ]
+    }
+  },
+  "run_plan": {},
+  "environment_settings": {
+    "current_screen_or_state": "疑似停留在 Instagram 私信发送后的会话页"
+  },
+  "strategy_playbook": [
+    {
+      "id": "playbook_continue_minimal_recovery",
+      "title": "续跑最小恢复",
+      "mode": "continue_current_episode",
+      "tags": ["中断", "续跑", "最小恢复"],
+      "L1": "恢复当前 Episode 的未完成部分，最大化续跑成功率",
+      "S1": "从中断点继续，先确认当前页面状态；如果页面一致，直接完成步骤6；如果页面不一致，只做最小路径恢复"
+    }
+  ],
+  "experience_memory": [
+    {
+      "step": 6,
+      "tags": ["确认", "Instagram", "私信"],
+      "tip": "确认发送结果时，先读取当前会话页最后一条消息状态；如果看见刚发送的优惠券内容即可视为已发出。"
+    },
+    {
+      "global": true,
+      "tip": "续跑时不要先返回首页；先判断当前页面是否还能直接完成中断步骤。"
+    }
+  ]
+}

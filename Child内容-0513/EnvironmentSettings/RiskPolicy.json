@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "id": "RPOL-PDD-COMPLIANCE-V5",
+    "title": "Risk Policy",
+    "version": 6
+  },
+  "risk_rules": [
+    {
+      "id": "RP-01",
+      "trigger": "off_platform_contact",
+      "action": "block_and_close"
+    },
+    {
+      "id": "RP-02",
+      "trigger": "private_cashback",
+      "action": "block_and_close"
+    },
+    {
+      "id": "RP-03",
+      "trigger": "fabricated_order_or_identity",
+      "action": "block"
+    },
+    {
+      "id": "RP-04",
+      "trigger": "threat_or_harassment",
+      "action": "block"
+    },
+    {
+      "id": "RP-05",
+      "trigger": "unauthorized_payment",
+      "action": "block"
+    },
+    {
+      "id": "RP-06",
+      "trigger": "repeat_spam",
+      "action": "wait"
+    },
+    {
+      "id": "RP-07",
+      "trigger": "sensitive_info_exposure",
+      "action": "block"
+    }
+  ],
+  "limits": {
+    "same_window_repeat_limit": 2,
+    "initial_wait_seconds": 300,
+    "max_wait_seconds_per_target": 1800
+  },
+  "action_meaning": {
+    "block_and_close": "阻断当前动作，并把目标送入关闭判断",
+    "block": "阻断当前动作，要求重新生成合规动作",
+    "wait": "不继续发送，进入等待或降频"
+  }
+}

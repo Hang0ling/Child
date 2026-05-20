@@ -1,0 +1,960 @@
+source,target,relation,reason
+strategy:IGS-S1-01,strategy:IGS-S2-01,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-01,strategy:IGS-S1-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-02,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-02,strategy:IGS-S1-G17,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-02,strategy:IGS-S5-05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S1-03,strategy:IGS-S2-05,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-03,strategy:IGS-S1-07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-03,strategy:IGS-S7-01,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S1-04,strategy:IGS-S2-02,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-04,strategy:IGS-S1-03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-04,strategy:IGS-S4-01,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S1-05,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-05,strategy:IGS-S1-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-05,strategy:IGS-S5-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S1-06,strategy:IGS-S2-07,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-06,strategy:IGS-S1-02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-06,strategy:IGS-S8-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S1-07,strategy:IGS-S2-05,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-07,strategy:IGS-S1-03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-07,strategy:IGS-S9-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S1-08,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-08,strategy:IGS-S1-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-08,strategy:IGS-S7-03,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S1-09,strategy:IGS-S2-07,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-09,strategy:IGS-S1-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-09,strategy:IGS-S3-07,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S2-01,strategy:IGS-S1-01,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-01,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-01,strategy:IGS-S2-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-02,strategy:IGS-S1-03,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-02,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-02,strategy:IGS-S2-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-02,strategy:IGS-S8-02,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S2-03,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-03,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-03,strategy:IGS-S2-06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-03,strategy:IGS-S8-05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S2-04,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-04,strategy:IGS-S3-05,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-04,strategy:IGS-S2-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-04,strategy:IGS-S6-09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S2-05,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-05,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-05,strategy:IGS-S2-06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-05,strategy:IGS-S9-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S2-06,strategy:IGS-S1-08,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-06,strategy:IGS-S3-05,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-06,strategy:IGS-S2-03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-06,strategy:IGS-S8-05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S2-07,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-07,strategy:IGS-S3-07,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-07,strategy:IGS-S2-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-07,strategy:IGS-S6-03,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S2-08,strategy:IGS-S1-08,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-08,strategy:IGS-S3-05,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-08,strategy:IGS-S2-04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-08,strategy:IGS-S7-03,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S2-09,strategy:IGS-S1-05,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-09,strategy:IGS-S3-05,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-09,strategy:IGS-S2-06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-09,strategy:IGS-S5-05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-01,strategy:IGS-S2-02,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-01,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-01,strategy:IGS-S3-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-01,strategy:IGS-S8-02,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-02,strategy:IGS-S2-03,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-02,strategy:IGS-S4-04,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-02,strategy:IGS-S3-06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-03,strategy:IGS-S2-05,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-03,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-03,strategy:IGS-S3-G14,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-03,strategy:IGS-S8-03,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-04,strategy:IGS-S2-08,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-04,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-04,strategy:IGS-S3-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-04,strategy:IGS-S7-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-05,strategy:IGS-S2-08,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-05,strategy:IGS-S4-04,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-05,strategy:IGS-S3-04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-05,strategy:IGS-S6-09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-06,strategy:IGS-S2-08,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-06,strategy:IGS-S4-09,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-06,strategy:IGS-S3-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-06,strategy:IGS-S9-02,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-07,strategy:IGS-S2-08,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-07,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-07,strategy:IGS-S3-G27,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-07,strategy:IGS-S8-04,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-08,strategy:IGS-S2-04,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-08,strategy:IGS-S4-04,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-08,strategy:IGS-S3-02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-09,strategy:IGS-S2-05,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-09,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-09,strategy:IGS-S3-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-09,strategy:IGS-S9-04,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S4-01,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-01,strategy:IGS-S5-08,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-01,strategy:IGS-S4-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-01,strategy:IGS-S1-04,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S4-02,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-02,strategy:IGS-S5-08,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-02,strategy:IGS-S4-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-03,strategy:IGS-S3-05,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-03,strategy:IGS-S5-06,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-03,strategy:IGS-S4-08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-03,strategy:IGS-S1-09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S4-04,strategy:IGS-S3-02,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-04,strategy:IGS-S5-09,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-04,strategy:IGS-S4-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-04,strategy:IGS-S9-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S4-05,strategy:IGS-S3-06,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-05,strategy:IGS-S5-08,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-05,strategy:IGS-S4-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-05,strategy:IGS-S8-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S4-06,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-06,strategy:IGS-S5-06,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-06,strategy:IGS-S4-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-07,strategy:IGS-S3-08,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-07,strategy:IGS-S5-08,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-07,strategy:IGS-S4-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-07,strategy:IGS-S6-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S4-08,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-08,strategy:IGS-S5-04,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-08,strategy:IGS-S4-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-08,strategy:IGS-S6-03,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S4-09,strategy:IGS-S3-06,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-09,strategy:IGS-S5-08,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-09,strategy:IGS-S4-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-09,strategy:IGS-S9-09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S5-01,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-01,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-01,strategy:IGS-S5-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-01,strategy:IGS-S9-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S5-02,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-02,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-02,strategy:IGS-S5-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-02,strategy:IGS-S9-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S5-03,strategy:IGS-S4-07,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-03,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-03,strategy:IGS-S5-08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-03,strategy:IGS-S8-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S5-04,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-04,strategy:IGS-S6-01,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-04,strategy:IGS-S5-07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-05,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-05,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-05,strategy:IGS-S5-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-06,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-06,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-06,strategy:IGS-S5-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-07,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-07,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-07,strategy:IGS-S5-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-07,strategy:IGS-S9-05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S5-08,strategy:IGS-S4-09,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-08,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-08,strategy:IGS-S5-03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-08,strategy:IGS-S7-09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S5-09,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-09,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-09,strategy:IGS-S5-07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-09,strategy:IGS-S7-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-01,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-01,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-01,strategy:IGS-S6-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-02,strategy:IGS-S5-03,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-02,strategy:IGS-S7-05,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-02,strategy:IGS-S6-04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-03,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-03,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-03,strategy:IGS-S6-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-03,strategy:IGS-S4-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-04,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-04,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-04,strategy:IGS-S6-02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-05,strategy:IGS-S5-G30,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-05,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-05,strategy:IGS-S6-03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-05,strategy:IGS-S8-04,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-06,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-06,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-06,strategy:IGS-S6-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-06,strategy:IGS-S8-G14,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-07,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-07,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-07,strategy:IGS-S6-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-07,strategy:IGS-S2-04,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-08,strategy:IGS-S5-02,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-08,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-08,strategy:IGS-S6-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-08,strategy:IGS-S9-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-09,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-09,strategy:IGS-S7-08,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-09,strategy:IGS-S6-07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-09,strategy:IGS-S2-04,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-01,strategy:IGS-S6-02,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-01,strategy:IGS-S8-09,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-01,strategy:IGS-S7-05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-01,strategy:IGS-S1-03,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-02,strategy:IGS-S6-G15,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-02,strategy:IGS-S8-04,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-02,strategy:IGS-S7-G10,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-03,strategy:IGS-S6-08,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-03,strategy:IGS-S8-07,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-03,strategy:IGS-S7-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-03,strategy:IGS-S1-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-04,strategy:IGS-S6-G15,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-04,strategy:IGS-S8-09,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-04,strategy:IGS-S7-02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-04,strategy:IGS-S3-05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-05,strategy:IGS-S6-02,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-05,strategy:IGS-S8-09,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-05,strategy:IGS-S7-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-05,strategy:IGS-S3-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-06,strategy:IGS-S6-G15,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-06,strategy:IGS-S8-04,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-06,strategy:IGS-S7-03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-06,strategy:IGS-S3-04,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-07,strategy:IGS-S6-01,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-07,strategy:IGS-S8-07,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-07,strategy:IGS-S7-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-08,strategy:IGS-S6-09,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-08,strategy:IGS-S8-05,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-08,strategy:IGS-S7-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-08,strategy:IGS-S5-09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-09,strategy:IGS-S6-08,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-09,strategy:IGS-S8-09,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-09,strategy:IGS-S7-07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-09,strategy:IGS-S5-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S8-01,strategy:IGS-S7-05,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-01,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-01,strategy:IGS-S8-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-02,strategy:IGS-S7-05,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-02,strategy:IGS-S9-02,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-02,strategy:IGS-S8-08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-02,strategy:IGS-S3-01,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S8-03,strategy:IGS-S7-05,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-03,strategy:IGS-S9-04,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-03,strategy:IGS-S8-08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-03,strategy:IGS-S3-03,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S8-04,strategy:IGS-S7-G19,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-04,strategy:IGS-S9-06,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-04,strategy:IGS-S8-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-04,strategy:IGS-S3-07,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S8-05,strategy:IGS-S7-08,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-05,strategy:IGS-S9-03,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-05,strategy:IGS-S8-03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-05,strategy:IGS-S2-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S8-06,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-06,strategy:IGS-S9-06,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-06,strategy:IGS-S8-07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-06,strategy:IGS-S1-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S8-07,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-07,strategy:IGS-S9-05,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-07,strategy:IGS-S8-06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-08,strategy:IGS-S7-01,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-08,strategy:IGS-S9-04,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-08,strategy:IGS-S8-03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-08,strategy:IGS-S4-05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S8-09,strategy:IGS-S7-05,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-09,strategy:IGS-S9-09,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-09,strategy:IGS-S8-08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-01,strategy:IGS-S8-09,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-01,strategy:IGS-S9-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-01,strategy:IGS-S9-G01,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-02,strategy:IGS-S8-09,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-02,strategy:IGS-S9-09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-02,strategy:IGS-S3-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-03,strategy:IGS-S8-05,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-03,strategy:IGS-S9-08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-04,strategy:IGS-S8-03,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-04,strategy:IGS-S9-08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-04,strategy:IGS-S3-09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-05,strategy:IGS-S8-07,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-05,strategy:IGS-S9-06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-05,strategy:IGS-S5-04,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-06,strategy:IGS-S8-06,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-06,strategy:IGS-S9-G14,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-06,strategy:IGS-S4-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-07,strategy:IGS-S8-01,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-07,strategy:IGS-S9-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-08,strategy:IGS-S8-09,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-08,strategy:IGS-S9-02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-08,strategy:IGS-S1-07,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-09,strategy:IGS-S8-09,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-09,strategy:IGS-S9-02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G01,strategy:IGS-S2-01,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G01,strategy:IGS-S1-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G02,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G02,strategy:IGS-S1-G17,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G03,strategy:IGS-S2-08,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G03,strategy:IGS-S1-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G04,strategy:IGS-S2-01,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G04,strategy:IGS-S1-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G05,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G05,strategy:IGS-S1-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G06,strategy:IGS-S2-08,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G06,strategy:IGS-S1-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G07,strategy:IGS-S2-01,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G07,strategy:IGS-S1-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G08,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G08,strategy:IGS-S1-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G09,strategy:IGS-S2-08,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G09,strategy:IGS-S1-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G10,strategy:IGS-S2-01,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G10,strategy:IGS-S1-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G11,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G11,strategy:IGS-S1-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G12,strategy:IGS-S2-08,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G12,strategy:IGS-S1-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G13,strategy:IGS-S2-01,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G13,strategy:IGS-S1-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G14,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G14,strategy:IGS-S1-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G15,strategy:IGS-S2-08,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G15,strategy:IGS-S1-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G16,strategy:IGS-S2-01,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G16,strategy:IGS-S1-G01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G17,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G17,strategy:IGS-S1-G02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G18,strategy:IGS-S2-08,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G18,strategy:IGS-S1-G03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G19,strategy:IGS-S2-01,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G19,strategy:IGS-S1-G04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G20,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G20,strategy:IGS-S1-G05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G21,strategy:IGS-S2-08,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G21,strategy:IGS-S1-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G22,strategy:IGS-S2-01,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G22,strategy:IGS-S1-G07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G23,strategy:IGS-S2-09,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G23,strategy:IGS-S1-G08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S1-G24,strategy:IGS-S2-08,continues_to,可继续推进到下一阶段 S2
+strategy:IGS-S1-G24,strategy:IGS-S1-G09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G01,strategy:IGS-S1-G22,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G01,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G01,strategy:IGS-S2-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G02,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G02,strategy:IGS-S3-05,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G02,strategy:IGS-S2-G17,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G03,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G03,strategy:IGS-S3-06,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G03,strategy:IGS-S2-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G04,strategy:IGS-S1-G22,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G04,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G04,strategy:IGS-S2-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G05,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G05,strategy:IGS-S3-04,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G05,strategy:IGS-S2-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G06,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G06,strategy:IGS-S3-06,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G06,strategy:IGS-S2-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G07,strategy:IGS-S1-G22,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G07,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G07,strategy:IGS-S2-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G08,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G08,strategy:IGS-S3-04,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G08,strategy:IGS-S2-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G09,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G09,strategy:IGS-S3-06,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G09,strategy:IGS-S2-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G10,strategy:IGS-S1-G22,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G10,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G10,strategy:IGS-S2-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G11,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G11,strategy:IGS-S3-04,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G11,strategy:IGS-S2-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G12,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G12,strategy:IGS-S3-06,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G12,strategy:IGS-S2-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G13,strategy:IGS-S1-G22,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G13,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G13,strategy:IGS-S2-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G14,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G14,strategy:IGS-S3-04,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G14,strategy:IGS-S2-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G15,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G15,strategy:IGS-S3-G22,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G15,strategy:IGS-S2-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G16,strategy:IGS-S1-G22,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G16,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G16,strategy:IGS-S2-G01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G17,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G17,strategy:IGS-S3-05,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G17,strategy:IGS-S2-G02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G18,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G18,strategy:IGS-S3-06,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G18,strategy:IGS-S2-G03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G19,strategy:IGS-S1-G22,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G19,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G19,strategy:IGS-S2-G04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G20,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G20,strategy:IGS-S3-04,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G20,strategy:IGS-S2-G05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G21,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G21,strategy:IGS-S3-06,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G21,strategy:IGS-S2-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G22,strategy:IGS-S1-G22,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G22,strategy:IGS-S3-09,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G22,strategy:IGS-S2-G07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G23,strategy:IGS-S1-06,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G23,strategy:IGS-S3-04,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G23,strategy:IGS-S2-G08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S2-G24,strategy:IGS-S1-07,depends_on,承接上一阶段 S1 的定位、信任或互动基础
+strategy:IGS-S2-G24,strategy:IGS-S3-06,continues_to,可继续推进到下一阶段 S3
+strategy:IGS-S2-G24,strategy:IGS-S2-G09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G01,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G01,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G01,strategy:IGS-S3-G28,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G02,strategy:IGS-S2-06,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G02,strategy:IGS-S4-03,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G02,strategy:IGS-S3-G26,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G02,strategy:IGS-S3-G23,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G03,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G03,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G03,strategy:IGS-S3-G27,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G03,strategy:IGS-S3-G24,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G04,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G04,strategy:IGS-S4-04,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G04,strategy:IGS-S3-G28,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G04,strategy:IGS-S3-G25,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G05,strategy:IGS-S2-05,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G05,strategy:IGS-S4-03,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G05,strategy:IGS-S3-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G06,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G06,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G06,strategy:IGS-S3-G30,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G06,strategy:IGS-S3-G27,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G07,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G07,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G07,strategy:IGS-S3-G28,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G08,strategy:IGS-S2-05,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G08,strategy:IGS-S4-03,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G08,strategy:IGS-S3-G29,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G09,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G09,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G09,strategy:IGS-S3-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G10,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G10,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G10,strategy:IGS-S3-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G10,strategy:IGS-S3-G25,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G11,strategy:IGS-S2-G22,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G11,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G11,strategy:IGS-S3-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G11,strategy:IGS-S3-G26,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G12,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G12,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G12,strategy:IGS-S3-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G12,strategy:IGS-S3-G27,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G13,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G13,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G13,strategy:IGS-S3-G28,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G13,strategy:IGS-S8-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G14,strategy:IGS-S2-06,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G14,strategy:IGS-S4-03,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G14,strategy:IGS-S3-03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G14,strategy:IGS-S8-03,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G15,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G15,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G15,strategy:IGS-S3-G27,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G15,strategy:IGS-S3-G30,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G16,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G16,strategy:IGS-S4-04,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G16,strategy:IGS-S3-G28,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G16,strategy:IGS-S3-G01,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G17,strategy:IGS-S2-05,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G17,strategy:IGS-S4-03,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G17,strategy:IGS-S3-G29,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G17,strategy:IGS-S3-G23,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G18,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G18,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G18,strategy:IGS-S3-G30,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G18,strategy:IGS-S3-G24,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G19,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G19,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G19,strategy:IGS-S3-G07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G19,strategy:IGS-S3-G25,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G20,strategy:IGS-S2-05,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G20,strategy:IGS-S4-03,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G20,strategy:IGS-S3-G08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G20,strategy:IGS-S3-G05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G21,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G21,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G21,strategy:IGS-S3-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G21,strategy:IGS-S3-G27,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G22,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G22,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G22,strategy:IGS-S3-G10,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G22,strategy:IGS-S3-G01,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G23,strategy:IGS-S2-G22,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G23,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G23,strategy:IGS-S3-G11,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G23,strategy:IGS-S3-G02,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G24,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G24,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G24,strategy:IGS-S3-G12,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G24,strategy:IGS-S3-G09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G25,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G25,strategy:IGS-S4-05,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G25,strategy:IGS-S3-G04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G26,strategy:IGS-S2-06,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G26,strategy:IGS-S4-03,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G26,strategy:IGS-S3-G14,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G26,strategy:IGS-S3-G05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G27,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G27,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G27,strategy:IGS-S3-G15,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G27,strategy:IGS-S3-G06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G28,strategy:IGS-S2-G24,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G28,strategy:IGS-S4-04,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G28,strategy:IGS-S3-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G28,strategy:IGS-S8-08,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S3-G29,strategy:IGS-S2-05,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G29,strategy:IGS-S4-03,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G29,strategy:IGS-S3-G08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G30,strategy:IGS-S2-09,depends_on,承接上一阶段 S2 的定位、信任或互动基础
+strategy:IGS-S3-G30,strategy:IGS-S4-06,continues_to,可继续推进到下一阶段 S4
+strategy:IGS-S3-G30,strategy:IGS-S3-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S3-G30,strategy:IGS-S3-G09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S4-G01,strategy:IGS-S3-G28,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G01,strategy:IGS-S5-G28,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G01,strategy:IGS-S4-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G02,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G02,strategy:IGS-S5-02,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G02,strategy:IGS-S4-G17,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G03,strategy:IGS-S3-02,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G03,strategy:IGS-S5-08,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G03,strategy:IGS-S4-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G04,strategy:IGS-S3-G28,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G04,strategy:IGS-S5-G28,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G04,strategy:IGS-S4-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G05,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G05,strategy:IGS-S5-02,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G05,strategy:IGS-S4-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G06,strategy:IGS-S3-02,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G06,strategy:IGS-S5-09,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G06,strategy:IGS-S4-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G07,strategy:IGS-S3-G28,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G07,strategy:IGS-S5-01,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G07,strategy:IGS-S4-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G08,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G08,strategy:IGS-S5-02,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G08,strategy:IGS-S4-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G09,strategy:IGS-S3-02,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G09,strategy:IGS-S5-09,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G09,strategy:IGS-S4-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G10,strategy:IGS-S3-G28,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G10,strategy:IGS-S5-G28,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G10,strategy:IGS-S4-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G11,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G11,strategy:IGS-S5-02,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G11,strategy:IGS-S4-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G12,strategy:IGS-S3-02,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G12,strategy:IGS-S5-08,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G12,strategy:IGS-S4-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G13,strategy:IGS-S3-G28,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G13,strategy:IGS-S5-01,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G13,strategy:IGS-S4-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G14,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G14,strategy:IGS-S5-02,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G14,strategy:IGS-S4-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G15,strategy:IGS-S3-02,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G15,strategy:IGS-S5-09,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G15,strategy:IGS-S4-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G16,strategy:IGS-S3-G28,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G16,strategy:IGS-S5-G28,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G16,strategy:IGS-S4-G01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G17,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G17,strategy:IGS-S5-02,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G17,strategy:IGS-S4-G02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G18,strategy:IGS-S3-02,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G18,strategy:IGS-S5-08,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G18,strategy:IGS-S4-G03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G19,strategy:IGS-S3-G28,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G19,strategy:IGS-S5-G28,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G19,strategy:IGS-S4-G04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G20,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G20,strategy:IGS-S5-02,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G20,strategy:IGS-S4-G05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G21,strategy:IGS-S3-02,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G21,strategy:IGS-S5-09,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G21,strategy:IGS-S4-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G22,strategy:IGS-S3-G28,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G22,strategy:IGS-S5-01,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G22,strategy:IGS-S4-G07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G23,strategy:IGS-S3-07,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G23,strategy:IGS-S5-02,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G23,strategy:IGS-S4-G08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S4-G24,strategy:IGS-S3-02,depends_on,承接上一阶段 S3 的定位、信任或互动基础
+strategy:IGS-S4-G24,strategy:IGS-S5-09,continues_to,可继续推进到下一阶段 S5
+strategy:IGS-S4-G24,strategy:IGS-S4-G09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G01,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G01,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G01,strategy:IGS-S5-G25,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G02,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G02,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G02,strategy:IGS-S5-G26,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G03,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G03,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G03,strategy:IGS-S5-G27,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G04,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G04,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G04,strategy:IGS-S5-G28,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G05,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G05,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G05,strategy:IGS-S5-G29,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G06,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G06,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G06,strategy:IGS-S5-G30,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G07,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G07,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G07,strategy:IGS-S5-G25,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G08,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G08,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G08,strategy:IGS-S5-G26,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G09,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G09,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G09,strategy:IGS-S5-G27,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G10,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G10,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G10,strategy:IGS-S5-G28,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G11,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G11,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G11,strategy:IGS-S5-G29,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G12,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G12,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G12,strategy:IGS-S5-G30,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G13,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G13,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G13,strategy:IGS-S5-G25,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G14,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G14,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G14,strategy:IGS-S5-G26,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G15,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G15,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G15,strategy:IGS-S5-G27,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G16,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G16,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G16,strategy:IGS-S5-G28,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G17,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G17,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G17,strategy:IGS-S5-G29,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G18,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G18,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G18,strategy:IGS-S5-G30,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G19,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G19,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G19,strategy:IGS-S5-G25,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G20,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G20,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G20,strategy:IGS-S5-G26,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G21,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G21,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G21,strategy:IGS-S5-G27,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G22,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G22,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G22,strategy:IGS-S5-G28,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G23,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G23,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G23,strategy:IGS-S5-G29,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G24,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G24,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G24,strategy:IGS-S5-G30,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G25,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G25,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G25,strategy:IGS-S5-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G26,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G26,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G26,strategy:IGS-S5-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G27,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G27,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G27,strategy:IGS-S5-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G28,strategy:IGS-S4-06,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G28,strategy:IGS-S6-08,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G28,strategy:IGS-S5-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G29,strategy:IGS-S4-G23,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G29,strategy:IGS-S6-G18,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G29,strategy:IGS-S5-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S5-G30,strategy:IGS-S4-08,depends_on,承接上一阶段 S4 的定位、信任或互动基础
+strategy:IGS-S5-G30,strategy:IGS-S6-05,continues_to,可继续推进到下一阶段 S6
+strategy:IGS-S5-G30,strategy:IGS-S5-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G01,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G01,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G01,strategy:IGS-S6-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G01,strategy:IGS-S8-07,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-G02,strategy:IGS-S5-03,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G02,strategy:IGS-S7-08,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G02,strategy:IGS-S6-G17,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G03,strategy:IGS-S5-G29,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G03,strategy:IGS-S7-06,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G03,strategy:IGS-S6-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G04,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G04,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G04,strategy:IGS-S6-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G05,strategy:IGS-S5-03,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G05,strategy:IGS-S7-08,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G05,strategy:IGS-S6-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G06,strategy:IGS-S5-G29,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G06,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G06,strategy:IGS-S6-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G07,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G07,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G07,strategy:IGS-S6-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G07,strategy:IGS-S8-07,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-G08,strategy:IGS-S5-03,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G08,strategy:IGS-S7-08,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G08,strategy:IGS-S6-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G08,strategy:IGS-S6-G17,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-G09,strategy:IGS-S5-G29,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G09,strategy:IGS-S7-06,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G09,strategy:IGS-S6-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G10,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G10,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G10,strategy:IGS-S6-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G10,strategy:IGS-S8-07,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-G11,strategy:IGS-S5-03,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G11,strategy:IGS-S7-08,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G11,strategy:IGS-S6-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G12,strategy:IGS-S5-G29,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G12,strategy:IGS-S7-04,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G12,strategy:IGS-S6-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G13,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G13,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G13,strategy:IGS-S6-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G14,strategy:IGS-S5-03,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G14,strategy:IGS-S7-08,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G14,strategy:IGS-S6-G02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G14,strategy:IGS-S6-G20,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-G15,strategy:IGS-S5-G29,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G15,strategy:IGS-S7-04,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G15,strategy:IGS-S6-G03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G15,strategy:IGS-S6-G21,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-G16,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G16,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G16,strategy:IGS-S6-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G17,strategy:IGS-S5-03,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G17,strategy:IGS-S7-08,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G17,strategy:IGS-S6-G02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G18,strategy:IGS-S5-G29,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G18,strategy:IGS-S7-G19,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G18,strategy:IGS-S6-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G18,strategy:IGS-S6-G03,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-G19,strategy:IGS-S5-04,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G19,strategy:IGS-S7-07,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G19,strategy:IGS-S6-G07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G19,strategy:IGS-S6-G04,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-G20,strategy:IGS-S5-03,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G20,strategy:IGS-S7-08,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G20,strategy:IGS-S6-G08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S6-G20,strategy:IGS-S6-G05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S6-G21,strategy:IGS-S5-G29,depends_on,承接上一阶段 S5 的定位、信任或互动基础
+strategy:IGS-S6-G21,strategy:IGS-S7-04,continues_to,可继续推进到下一阶段 S7
+strategy:IGS-S6-G21,strategy:IGS-S6-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G01,strategy:IGS-S6-G21,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G01,strategy:IGS-S8-04,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G01,strategy:IGS-S7-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G02,strategy:IGS-S6-09,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G02,strategy:IGS-S8-09,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G02,strategy:IGS-S7-G17,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G03,strategy:IGS-S6-08,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G03,strategy:IGS-S8-07,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G03,strategy:IGS-S7-G15,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G03,strategy:IGS-S7-G18,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-G04,strategy:IGS-S6-G21,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G04,strategy:IGS-S8-04,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G04,strategy:IGS-S7-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G04,strategy:IGS-S7-G13,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-G05,strategy:IGS-S6-09,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G05,strategy:IGS-S8-09,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G05,strategy:IGS-S7-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G06,strategy:IGS-S6-G19,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G06,strategy:IGS-S8-09,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G06,strategy:IGS-S7-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G07,strategy:IGS-S6-G18,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G07,strategy:IGS-S8-04,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G07,strategy:IGS-S7-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G07,strategy:IGS-S7-02,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-G08,strategy:IGS-S6-09,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G08,strategy:IGS-S8-05,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G08,strategy:IGS-S7-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G08,strategy:IGS-S7-G17,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-G09,strategy:IGS-S6-08,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G09,strategy:IGS-S8-G20,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G09,strategy:IGS-S7-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G10,strategy:IGS-S6-G15,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G10,strategy:IGS-S8-04,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G10,strategy:IGS-S7-02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G11,strategy:IGS-S6-03,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G11,strategy:IGS-S8-05,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G11,strategy:IGS-S7-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G12,strategy:IGS-S6-08,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G12,strategy:IGS-S8-G20,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G12,strategy:IGS-S7-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G13,strategy:IGS-S6-G21,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G13,strategy:IGS-S8-04,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G13,strategy:IGS-S7-G04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G14,strategy:IGS-S6-09,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G14,strategy:IGS-S8-09,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G14,strategy:IGS-S7-G02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G14,strategy:IGS-S7-G20,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-G15,strategy:IGS-S6-08,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G15,strategy:IGS-S8-07,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G15,strategy:IGS-S7-G03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G15,strategy:IGS-S7-09,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-G16,strategy:IGS-S6-G21,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G16,strategy:IGS-S8-04,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G16,strategy:IGS-S7-G04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G16,strategy:IGS-S7-G01,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-G17,strategy:IGS-S6-09,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G17,strategy:IGS-S8-05,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G17,strategy:IGS-S7-G02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G18,strategy:IGS-S6-G19,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G18,strategy:IGS-S8-09,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G18,strategy:IGS-S7-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G18,strategy:IGS-S7-G12,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-G19,strategy:IGS-S6-G18,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G19,strategy:IGS-S8-04,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G19,strategy:IGS-S7-G07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G20,strategy:IGS-S6-09,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G20,strategy:IGS-S8-05,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G20,strategy:IGS-S7-G08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S7-G20,strategy:IGS-S7-G05,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S7-G21,strategy:IGS-S6-08,depends_on,承接上一阶段 S6 的定位、信任或互动基础
+strategy:IGS-S7-G21,strategy:IGS-S8-G20,continues_to,可继续推进到下一阶段 S8
+strategy:IGS-S7-G21,strategy:IGS-S7-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G01,strategy:IGS-S7-05,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G01,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G01,strategy:IGS-S8-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G02,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G02,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G02,strategy:IGS-S8-G17,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G03,strategy:IGS-S7-09,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G03,strategy:IGS-S9-02,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G03,strategy:IGS-S8-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G04,strategy:IGS-S7-08,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G04,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G04,strategy:IGS-S8-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G05,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G05,strategy:IGS-S9-G11,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G05,strategy:IGS-S8-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G06,strategy:IGS-S7-09,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G06,strategy:IGS-S9-09,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G06,strategy:IGS-S8-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G07,strategy:IGS-S7-05,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G07,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G07,strategy:IGS-S8-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G08,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G08,strategy:IGS-S9-G11,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G08,strategy:IGS-S8-G23,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G09,strategy:IGS-S7-09,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G09,strategy:IGS-S9-09,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G09,strategy:IGS-S8-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G10,strategy:IGS-S7-08,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G10,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G10,strategy:IGS-S8-01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G11,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G11,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G11,strategy:IGS-S8-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G12,strategy:IGS-S7-09,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G12,strategy:IGS-S9-02,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G12,strategy:IGS-S8-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G13,strategy:IGS-S7-08,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G13,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G13,strategy:IGS-S8-G22,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G14,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G14,strategy:IGS-S9-05,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G14,strategy:IGS-S8-07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G14,strategy:IGS-S6-06,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S8-G15,strategy:IGS-S7-09,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G15,strategy:IGS-S9-09,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G15,strategy:IGS-S8-G24,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G16,strategy:IGS-S7-05,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G16,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G16,strategy:IGS-S8-G01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G17,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G17,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G17,strategy:IGS-S8-G02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G18,strategy:IGS-S7-09,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G18,strategy:IGS-S9-02,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G18,strategy:IGS-S8-G03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G19,strategy:IGS-S7-08,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G19,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G19,strategy:IGS-S8-G04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G20,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G20,strategy:IGS-S9-G11,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G20,strategy:IGS-S8-G05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G21,strategy:IGS-S7-09,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G21,strategy:IGS-S9-09,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G21,strategy:IGS-S8-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G22,strategy:IGS-S7-05,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G22,strategy:IGS-S9-07,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G22,strategy:IGS-S8-G07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G23,strategy:IGS-S7-07,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G23,strategy:IGS-S9-G11,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G23,strategy:IGS-S8-G08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S8-G24,strategy:IGS-S7-09,depends_on,承接上一阶段 S7 的定位、信任或互动基础
+strategy:IGS-S8-G24,strategy:IGS-S9-09,continues_to,可继续推进到下一阶段 S9
+strategy:IGS-S8-G24,strategy:IGS-S8-G09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G01,strategy:IGS-S8-05,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G01,strategy:IGS-S9-G13,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G01,strategy:IGS-S9-01,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G02,strategy:IGS-S8-07,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G02,strategy:IGS-S9-G14,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G02,strategy:IGS-S9-G17,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G03,strategy:IGS-S8-09,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G03,strategy:IGS-S9-G15,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G03,strategy:IGS-S9-G18,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G04,strategy:IGS-S8-05,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G04,strategy:IGS-S9-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G04,strategy:IGS-S9-G19,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G05,strategy:IGS-S8-G21,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G05,strategy:IGS-S9-G17,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G05,strategy:IGS-S9-G20,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G06,strategy:IGS-S8-02,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G06,strategy:IGS-S9-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G06,strategy:IGS-S9-G21,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G07,strategy:IGS-S8-09,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G07,strategy:IGS-S9-G19,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G07,strategy:IGS-S9-G13,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G08,strategy:IGS-S8-07,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G08,strategy:IGS-S9-G20,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G08,strategy:IGS-S9-G14,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G09,strategy:IGS-S8-02,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G09,strategy:IGS-S9-G21,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G09,strategy:IGS-S9-G15,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G10,strategy:IGS-S8-05,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G10,strategy:IGS-S9-G16,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G11,strategy:IGS-S8-G18,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G11,strategy:IGS-S9-06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G11,strategy:IGS-S9-G17,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G12,strategy:IGS-S8-G19,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G12,strategy:IGS-S9-G18,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G13,strategy:IGS-S8-05,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G13,strategy:IGS-S9-G01,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G13,strategy:IGS-S9-G19,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G14,strategy:IGS-S8-07,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G14,strategy:IGS-S9-G02,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G14,strategy:IGS-S9-G20,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G15,strategy:IGS-S8-09,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G15,strategy:IGS-S9-G03,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G15,strategy:IGS-S9-G21,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G16,strategy:IGS-S8-05,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G16,strategy:IGS-S9-G04,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G16,strategy:IGS-S9-G10,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G17,strategy:IGS-S8-G21,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G17,strategy:IGS-S9-G05,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G17,strategy:IGS-S9-G11,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G18,strategy:IGS-S8-G19,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G18,strategy:IGS-S9-G06,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G18,strategy:IGS-S9-G12,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G19,strategy:IGS-S8-09,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G19,strategy:IGS-S9-G07,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G19,strategy:IGS-S9-G13,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G20,strategy:IGS-S8-07,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G20,strategy:IGS-S9-G08,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G20,strategy:IGS-S9-G14,same_source_family,来自相近资料来源，可作为同一方法论的延伸
+strategy:IGS-S9-G21,strategy:IGS-S8-02,depends_on,承接上一阶段 S8 的定位、信任或互动基础
+strategy:IGS-S9-G21,strategy:IGS-S9-G09,reinforces,同阶段内目标、内容形式或用户心理相互增强
+strategy:IGS-S9-G21,strategy:IGS-S9-G15,same_source_family,来自相近资料来源，可作为同一方法论的延伸

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日志查看 Log Viewer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../nav.css" />
+  </head>
+  <body>
+    <main class="log-stage" aria-label="日志查看界面">
+      <header class="page-header">
+        <p>Log workspace</p>
+        <h1>日志查看</h1>
+      </header>
+
+      <label class="search-box">
+        <span class="search-icon" aria-hidden="true"></span>
+        <input id="logSearch" type="search" placeholder="搜索文件内容、时间、文件名称" />
+      </label>
+
+      <section class="log-list frame-panel" aria-label="系统文档列表">
+        <div class="panel-kicker">所有文档</div>
+        <div class="log-list-items" id="logListItems"></div>
+      </section>
+
+      <section class="document-stack frame-panel" aria-label="系统内文档">
+        <div class="panel-kicker">关联文档</div>
+        <div class="doc-chip-list" id="relatedDocs"></div>
+      </section>
+
+      <section class="input-card frame-panel" aria-label="输入内容">
+        <div class="accordion" id="inputAccordion"></div>
+        <footer>
+          <b>输入内容</b>
+          <span>Input Content</span>
+        </footer>
+      </section>
+
+      <section class="process-card frame-panel" aria-label="生成过程">
+        <h1 id="processTitle">Agent- Decision Core</h1>
+        <div class="copy-stack" id="processCopy"></div>
+        <footer>
+          <b>生成过程</b>
+          <span>Generation Process</span>
+        </footer>
+      </section>
+
+      <section class="result-card frame-panel" aria-label="文件结果">
+        <h1 id="resultTitle">Execution Brief</h1>
+        <div class="copy-stack" id="resultCopy"></div>
+        <footer>
+          <div>
+            <b>文件结果</b>
+            <span>File Result</span>
+          </div>
+          <button id="copyResult" type="button">复制结果</button>
+          <a id="openDebug" href="../调试台/index.html">打开调试</a>
+        </footer>
+      </section>
+
+      <div class="stage-caption caption-a">整个系统内<br />按照时间顺序<br />排列的所有文档</div>
+      <div class="stage-caption caption-b">与该文档<br />相关的系<br />统内的文<br />档</div>
+      <div class="stage-caption caption-c">生产该文档的输入内容</div>
+    </main>
+
+    <nav class="bottom-page-nav" aria-label="页面导航">
+      <div class="bottom-nav-rail">
+        <a href="../index.html">进化树</a>
+        <a href="../Child-流程图/index.html">流程图</a>
+        <a class="is-active" href="./index.html">日志查看</a>
+        <a href="../调试台/index.html">调试台</a>
+      </div>
+    </nav>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
