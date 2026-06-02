@@ -1,5 +1,5 @@
 const BASE_WIDTH = 1280;
-const BASE_HEIGHT = 832;
+const BASE_HEIGHT = 1820;
 const EPISODE_MS = 10000;
 
 const stage = document.getElementById("stage");
@@ -63,19 +63,19 @@ const paths = {
   ],
   choices: {
     "choice-continue": [
-      "M1000 486 C980 490 958 498 956 508",
-      "M1008 486 C984 492 960 500 956 508",
-      "M1016 486 C988 494 962 502 956 508",
+      "M1000 486 C982 520 958 550 956 568",
+      "M1008 486 C986 522 960 552 956 568",
+      "M1016 486 C990 524 962 554 956 568",
     ],
     "choice-next": [
-      "M1000 486 C1022 490 1060 498 1064 508",
-      "M1008 486 C1030 492 1062 500 1064 508",
-      "M1016 486 C1038 494 1064 502 1064 508",
+      "M1000 486 C1022 520 1060 550 1064 568",
+      "M1008 486 C1030 522 1062 552 1064 568",
+      "M1016 486 C1038 524 1064 554 1064 568",
     ],
     "choice-close": [
-      "M1000 486 C1060 490 1168 500 1174 508",
-      "M1008 486 C1068 494 1170 502 1174 508",
-      "M1016 486 C1076 498 1172 504 1174 508",
+      "M1000 486 C1060 520 1168 550 1174 568",
+      "M1008 486 C1068 522 1170 552 1174 568",
+      "M1016 486 C1076 524 1172 554 1174 568",
     ],
   },
   returns: {
@@ -116,9 +116,57 @@ let nextEpisodeRequested = false;
 let episodeCompleted = false;
 let planClosing = false;
 
+function buildCoreReplicas() {
+  if (stage.querySelector(".core-system-frame.system-1")) return;
+
+  const decision = stage.querySelector(".decision-core");
+  const execution = stage.querySelector(".execution-core");
+  const judge = stage.querySelector(".judge-core");
+  if (!decision || !execution || !judge) return;
+
+  [decision, execution, judge].forEach((panel) => panel.classList.add("system-1"));
+
+  for (let index = 2; index <= 3; index += 1) {
+    [decision, execution, judge].forEach((panel) => {
+      const clone = panel.cloneNode(true);
+      clone.classList.remove("system-1");
+      clone.classList.add(`system-${index}`);
+      clone.querySelectorAll("[data-monitor-device]").forEach((node) => {
+        node.dataset.monitorDevice = `phone-${index}`;
+      });
+      clone.querySelectorAll("h2 small").forEach((node) => {
+        node.textContent = `System 0${index}`;
+      });
+      clone.querySelectorAll(".organ.phone b").forEach((node) => {
+        node.textContent = `手机 0${index}`;
+      });
+      stage.insertBefore(clone, stage.querySelector(".beam-layer"));
+    });
+  }
+
+  for (let index = 1; index <= 3; index += 1) {
+    const executionPanel = stage.querySelector(`.execution-core.system-${index}`);
+    executionPanel?.querySelectorAll(".execution-lane").forEach((lane) => {
+      if (!lane.classList.contains(`lane-${index}`)) lane.remove();
+    });
+    executionPanel?.querySelectorAll("[data-monitor-device]").forEach((node) => {
+      node.dataset.monitorDevice = `phone-${index}`;
+    });
+    executionPanel?.querySelectorAll(".organ.phone b").forEach((node) => {
+      node.textContent = index === 1 ? "手机" : `手机 0${index}`;
+    });
+
+    const frame = document.createElement("div");
+    frame.className = `core-system-frame system-${index}`;
+    frame.innerHTML = `<span>Core System 0${index}</span>`;
+    stage.insertBefore(frame, stage.querySelector(`.decision-core.system-${index}`));
+  }
+}
+
 function fitStage() {
-  const scale = Math.min(window.innerWidth / BASE_WIDTH, window.innerHeight / BASE_HEIGHT);
-  stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
+  stage.style.top = "0";
+  stage.style.left = "50%";
+  stage.style.transform = "translateX(-50%)";
 }
 
 function after(delay, fn) {
@@ -413,6 +461,12 @@ function restartRunPlan() {
 
 window.addEventListener("resize", fitStage);
 document.addEventListener("click", (event) => {
+  const monitorTarget = event.target.closest("[data-monitor-device]");
+  if (monitorTarget) {
+    window.location.href = `../监视器/index.html?device=${encodeURIComponent(monitorTarget.dataset.monitorDevice)}`;
+    return;
+  }
+
   const logTarget = event.target.closest("[data-log-topic]");
   if (logTarget) {
     window.location.href = `../日志查看/index.html?topic=${encodeURIComponent(logTarget.dataset.logTopic)}`;
@@ -421,8 +475,9 @@ document.addEventListener("click", (event) => {
 
   const debugTarget = event.target.closest("[data-debug-topic]");
   if (debugTarget) {
-    window.location.href = `../调试台/index.html?module=${encodeURIComponent(debugTarget.dataset.debugTopic)}`;
+    window.location.href = `../调试台/index.html?module=${encodeURIComponent(debugTarget.dataset.debugTopic)}&v=debug-title-controls-11`;
   }
 });
+buildCoreReplicas();
 fitStage();
 restartRunPlan();

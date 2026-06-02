@@ -69,15 +69,20 @@ function dateStamp(offsetMinutes = 0) {
 
 const logs = topicOrder.map((topic, index) => {
   const [cn, en, shortName] = topicMap[topic];
+  const childId = `CHILD-${String((index % 3) + 1).padStart(3, "0")}`;
   return {
     topic,
     cn,
     en,
     shortName,
+    childId,
+    displayName: `${childId} · ${en}`,
     time: dateStamp(index * 37),
     summary: `${cn} 文档记录了当前 child 生成流程里 ${en} 的输入、生成过程和最终内容。`,
   };
 });
+
+const logByTopic = new Map(logs.map((log) => [log.topic, log]));
 
 function escapeHtml(value) {
   return String(value)
@@ -94,7 +99,7 @@ function paragraph(text, count) {
 function visibleLogs() {
   if (!query) return logs;
   return logs.filter((log) => {
-    const haystack = `${log.cn} ${log.en} ${log.time} ${log.summary}`.toLowerCase();
+    const haystack = `${log.cn} ${log.en} ${log.childId} ${log.time} ${log.summary}`.toLowerCase();
     return haystack.includes(query);
   });
 }
@@ -119,6 +124,7 @@ function renderLogList() {
         <button class="log-item ${log.topic === activeTopic ? "active" : ""}" type="button" data-topic="${log.topic}">
           <span class="log-icon" aria-hidden="true"></span>
           <span>
+            <em>${escapeHtml(log.childId)}</em>
             <strong>${escapeHtml(log.en)}</strong>
             <time>${escapeHtml(log.time)}</time>
             <small>${escapeHtml(log.cn)}</small>
@@ -136,9 +142,11 @@ function renderRelatedDocs() {
   relatedDocs.innerHTML = chips
     .map((topic) => {
       const [cn, en] = topicMap[topic];
+      const log = logByTopic.get(topic);
       return `
         <button class="doc-chip ${topic === activeTopic ? "active" : ""}" type="button" data-topic="${topic}">
           <b>${escapeHtml(cn)}</b>
+          ${log ? `<em>${escapeHtml(log.childId)}</em>` : ""}
           <span>${escapeHtml(en)}</span>
         </button>
       `;
@@ -166,11 +174,12 @@ function renderAccordion() {
 
 function renderContent() {
   const [cn, en, shortName] = topicMap[activeTopic];
+  const activeLog = logByTopic.get(activeTopic);
   processTitle.textContent = `Agent- ${cn}`;
-  resultTitle.textContent = en;
+  resultTitle.textContent = activeLog ? activeLog.displayName : en;
   processCopy.innerHTML = paragraph(`这里是生成 ${shortName} 时使用的提示词、代码片段和中间推理记录。`, 9);
   resultCopy.innerHTML = paragraph(`这里是 ${cn} 的最终文件内容，点击左侧日志或关联文档会切换当前结果。`, 10);
-  openDebug.href = `../调试台/index.html?module=${encodeURIComponent(debugByTopic[activeTopic] || "long-term-strategy")}`;
+  openDebug.href = `../调试台/index.html?module=${encodeURIComponent(debugByTopic[activeTopic] || "long-term-strategy")}&v=debug-title-controls-11`;
 }
 
 function render() {

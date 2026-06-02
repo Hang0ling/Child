@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Child Genome Flow</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="../nav.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem("child-theme") || "dark";
+      } catch {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css?v=flow-phone-width-15" />
+    <link rel="stylesheet" href="../nav.css?v=theme-icon-2" />
   </head>
   <body>
     <a class="back-link" href="../index.html" aria-label="返回进化树界面">
@@ -57,10 +64,8 @@
           <article class="micro-card source-card strategy-source wide" data-glow="strategy" data-log-topic="strategy-playbook">
             <h3>策略手册<br /><small>Strategy Playbook</small></h3>
             <ul class="dot-list">
-              <li><span></span>长期策略<br /><small>Long Term Strategy Graph</small></li>
-              <li><span></span>短期索引<br /><small>Transition Index</small></li>
-              <li><span></span>短期策略<br /><small>Short Term Strategy Graph</small></li>
-              <li><span></span>选定策略<br /><small>Selected Strategy</small></li>
+              <li><span></span>A层策略<br /><small>A Layer Strategy</small></li>
+              <li><span></span>B层策略<br /><small>B Layer Strategy</small></li>
             </ul>
           </article>
           <article class="micro-card source-card memory-source" data-glow="memory" data-log-topic="experience-memory">
@@ -154,7 +159,10 @@
         <div class="decision-layout">
           <article class="decision-box strategy-box">
             <h3>策略手册 <small>/ Strategy Playbook</small></h3>
-            <p class="debug-link" data-debug-topic="long-term-strategy">长期策略图 / Long Term Strategy Graph</p>
+            <p class="debug-link strategy-heading" data-debug-topic="long-term-strategy">
+              A层策略 <small>A Layer Strategy</small>
+              <span class="pre-scorer scorer-a" data-debug-topic="pre-scorer-a">Pre Scorer A</span>
+            </p>
             <svg class="strategy-map long-map" viewBox="0 0 250 130" aria-hidden="true" data-debug-topic="long-term-strategy">
               <path d="M20 78 L54 50 L92 76 L132 64 L172 36 L220 56" />
               <path d="M54 50 L70 104 L132 64 L146 105 L220 56" />
@@ -169,8 +177,10 @@
               <circle class="node selected-node" cx="184" cy="88" r="10" />
               <circle class="node n9" cx="220" cy="56" r="8" />
             </svg>
-            <span class="choice-badge transition-badge" data-debug-topic="transition-index">转移索引<br /><small>Transition Index</small></span>
-            <p class="debug-link" data-debug-topic="short-term-strategy">短期策略图 / Short Term Strategy Graph</p>
+            <p class="debug-link strategy-heading" data-debug-topic="short-term-strategy">
+              B层策略 <small>B Layer Strategy</small>
+              <span class="pre-scorer scorer-b" data-debug-topic="pre-scorer-b">Pre Scorer B</span>
+            </p>
             <svg class="strategy-map short-map" viewBox="0 0 250 118" aria-hidden="true" data-debug-topic="short-term-strategy">
               <path d="M30 74 L66 38 L110 62 L150 30 L190 50 L224 80" />
               <path d="M66 38 L86 94 L150 30 L164 92 L224 80" />
@@ -184,7 +194,6 @@
               <circle class="warm-node" cx="190" cy="50" r="8" />
               <circle class="warm-node" cx="224" cy="80" r="8" />
             </svg>
-            <span class="choice-badge selected-badge" data-debug-topic="selected-strategy">选定策略<br /><small>Selected Strategy</small></span>
           </article>
 
           <article class="decision-box experience-box" data-debug-topic="experience-memory">
@@ -195,47 +204,47 @@
               <i></i><i></i><i></i><i></i><i></i>
             </div>
           </article>
-        </div>
-      </section>
 
-      <section class="panel agent-panel">
-        <h2><span class="panel-mark agent-mark"></span>Agent</h2>
-        <div class="agent-grid">
-          <article class="agent-card selected-strategy" data-debug-topic="selected-strategy">
-            <svg viewBox="0 0 82 52" aria-hidden="true">
-              <path d="M10 38 L24 18 L44 30 L62 12 L74 28" />
-              <path d="M24 18 L30 44 L44 30 L58 42 L74 28" />
-              <circle cx="10" cy="38" r="4" /><circle cx="24" cy="18" r="4" />
-              <circle cx="30" cy="44" r="4" /><circle cx="44" cy="30" r="4" />
-              <circle cx="62" cy="12" r="4" /><circle cx="74" cy="28" r="4" />
-            </svg>
-            <b>选定策略</b>
-            <small>Selected Strategy</small>
-          </article>
-          <article class="agent-card agent-memory" data-debug-topic="experience-memory">
-            <b>经验记忆</b>
-            <small>Experience Memory</small>
-            <div class="green-bars"><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="agent-card agent-run" data-debug-topic="run-plan">
-            <b>运行计划</b>
-            <small>Run Plan</small>
-            <div class="tiny-plan"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="agent-card compact" data-debug-topic="core-gene">
-            <span class="mini-dna"></span>
-            <b>核心基因</b>
-            <small>DNA</small>
-          </article>
-          <article class="agent-card compact" data-debug-topic="history-context">
-            <span class="tile-icon stack-icon"></span>
-            <b>历史信息</b>
-            <small>History Context</small>
-          </article>
-          <article class="agent-card compact" data-debug-topic="environment-settings">
-            <span class="tile-icon shield-icon"></span>
-            <b>环境配置</b>
-            <small>Environment Settings</small>
+          <article class="decision-box generator-box" data-debug-topic="generator">
+            <h3>合成器 <small>/ Generator</small></h3>
+            <div class="generator-grid">
+              <article class="agent-card selected-strategy" data-debug-topic="selected-strategy">
+                <svg viewBox="0 0 82 52" aria-hidden="true">
+                  <path d="M10 38 L24 18 L44 30 L62 12 L74 28" />
+                  <path d="M24 18 L30 44 L44 30 L58 42 L74 28" />
+                  <circle cx="10" cy="38" r="4" /><circle cx="24" cy="18" r="4" />
+                  <circle cx="30" cy="44" r="4" /><circle cx="44" cy="30" r="4" />
+                  <circle cx="62" cy="12" r="4" /><circle cx="74" cy="28" r="4" />
+                </svg>
+                <b>选定策略</b>
+                <small>Selected Strategy</small>
+              </article>
+              <article class="agent-card agent-memory" data-debug-topic="experience-memory">
+                <b>经验记忆</b>
+                <small>Experience Memory</small>
+                <div class="green-bars"><i></i><i></i><i></i><i></i></div>
+              </article>
+              <article class="agent-card agent-run" data-debug-topic="run-plan">
+                <b>运行计划</b>
+                <small>Run Plan</small>
+                <div class="tiny-plan"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </article>
+              <article class="agent-card compact" data-debug-topic="core-gene">
+                <span class="mini-dna"></span>
+                <b>核心基因</b>
+                <small>DNA</small>
+              </article>
+              <article class="agent-card compact" data-debug-topic="history-context">
+                <span class="tile-icon stack-icon"></span>
+                <b>历史信息</b>
+                <small>History Context</small>
+              </article>
+              <article class="agent-card compact" data-debug-topic="environment-settings">
+                <span class="tile-icon shield-icon"></span>
+                <b>环境配置</b>
+                <small>Environment Settings</small>
+              </article>
+            </div>
           </article>
         </div>
       </section>
@@ -248,12 +257,11 @@
               <span class="organ-icon claw-icon"></span>
               <b>Openclaw</b>
             </div>
-            <div class="lane-track"></div>
             <div class="organ autoglm" data-debug-topic="autoglm">
               <span class="organ-icon glm-icon"></span>
               <b>AutoGLM</b>
             </div>
-            <div class="organ phone" data-debug-topic="phone">
+            <div class="organ phone" data-monitor-device="phone-1">
               <span class="organ-icon phone-icon"></span>
               <b>手机</b><small>Phone</small>
             </div>
@@ -267,14 +275,13 @@
               <span class="organ-icon claw-icon"></span>
               <b>Openclaw</b>
             </div>
-            <div class="lane-track"></div>
             <div class="organ autoglm" data-debug-topic="autoglm">
               <span class="organ-icon glm-icon"></span>
               <b>AutoGLM</b>
             </div>
-            <div class="organ phone" data-debug-topic="phone">
+            <div class="organ phone" data-monitor-device="phone-2">
               <span class="organ-icon phone-icon"></span>
-              <b>手机</b><small>Phone</small>
+              <b>手机 02</b><small>Phone</small>
             </div>
             <div class="organ timer" data-debug-topic="timer">
               <span class="organ-icon timer-icon"><i></i></span>
@@ -286,14 +293,13 @@
               <span class="organ-icon claw-icon"></span>
               <b>Openclaw</b>
             </div>
-            <div class="lane-track"></div>
             <div class="organ autoglm" data-debug-topic="autoglm">
               <span class="organ-icon glm-icon"></span>
               <b>AutoGLM</b>
             </div>
-            <div class="organ phone" data-debug-topic="phone">
+            <div class="organ phone" data-monitor-device="phone-3">
               <span class="organ-icon phone-icon"></span>
-              <b>手机</b><small>Phone</small>
+              <b>手机 03</b><small>Phone</small>
             </div>
             <div class="organ timer" data-debug-topic="timer">
               <span class="organ-icon timer-icon"><i></i></span>
@@ -308,6 +314,11 @@
         <article class="judge-result" data-debug-topic="judge-result">
           <span class="big-gavel"></span>
           <b>评判结果 / Judge Result</b>
+        </article>
+        <article class="selector-card" data-debug-topic="selector">
+          <span class="post-scorer-icon"><i></i></span>
+          <b>Post Scorer</b>
+          <small>后置评分器</small>
         </article>
         <div class="choices">
           <article class="choice-card continue-choice" data-debug-topic="continuing-episode">
@@ -392,9 +403,9 @@
         <path class="beam lane-done-beam lane2-done-beam" d="M552 568 C730 568 890 522 1008 486" />
         <path class="beam lane-done-beam lane3-done-beam" d="M552 698 C730 698 890 584 1016 486" />
 
-        <path class="beam judge-choice-beam continue-beam" d="M1000 486 C980 490 958 498 956 508" />
-        <path class="beam judge-choice-beam next-beam" d="M1008 486 C1030 492 1062 500 1064 508" />
-        <path class="beam judge-choice-beam close-beam" d="M1016 486 C1076 498 1172 504 1174 508" />
+        <path class="beam judge-choice-beam continue-beam" d="M1000 486 C982 520 958 550 956 568" />
+        <path class="beam judge-choice-beam next-beam" d="M1008 486 C1030 522 1062 552 1064 568" />
+        <path class="beam judge-choice-beam close-beam" d="M1016 486 C1076 524 1172 554 1174 568" />
         <path class="beam return-beam reverse-beam" d="M956 630 C850 666 620 650 438 492" />
         <path class="beam next-return-beam reverse-beam" d="M1064 630 C910 690 650 660 438 492" />
         <path class="beam close-summary-beam" d="M1174 630 L1174 674" />
@@ -402,18 +413,18 @@
       </svg>
 
       <div class="flow-dot global-dot dot-a"></div>
-      <div class="flow-dot global-dot dot-b"></div>
-      <div class="flow-dot global-dot dot-c"></div>
     </main>
     <nav class="bottom-page-nav" aria-label="页面导航">
       <div class="bottom-nav-rail">
         <a href="../index.html">进化树</a>
+        <a href="../监视器/index.html">监视器</a>
         <a class="is-active" href="../Child-流程图/index.html">流程图</a>
         <a href="../日志查看/index.html">日志查看</a>
-        <a href="../调试台/index.html">调试台</a>
+        <a href="../调试台/index.html?v=debug-title-controls-11">调试台</a>
       </div>
     </nav>
 
-    <script src="./script.js"></script>
+    <script src="../theme.js?v=theme-icon-1"></script>
+    <script src="./script.js?v=flow-phone-width-15"></script>
   </body>
 </html>

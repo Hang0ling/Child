@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>监视器 Monitor</title>
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem("child-theme") || "dark";
+      } catch {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css?v=monitor-phone-fit-4" />
+    <link rel="stylesheet" href="../nav.css?v=theme-icon-2" />
+  </head>
+  <body>
+    <main class="monitor-stage" aria-label="手机监视器界面">
+      <header class="monitor-header">
+        <div class="monitor-summary" id="monitorSummary"></div>
+      </header>
+
+      <section class="monitor-grid" id="monitorGrid" aria-label="手机屏幕监视列表"></section>
+    </main>
+
+    <nav class="bottom-page-nav" aria-label="页面导航">
+      <div class="bottom-nav-rail">
+        <a href="../index.html">进化树</a>
+        <a class="is-active" href="./index.html">监视器</a>
+        <a href="../Child-流程图/index.html">流程图</a>
+        <a href="../日志查看/index.html">日志查看</a>
+        <a href="../调试台/index.html?v=debug-title-controls-11">调试台</a>
+      </div>
+    </nav>
+
+    <script src="../theme.js?v=theme-icon-1"></script>
+    <script src="./script.js?v=monitor-phone-fit-4"></script>
+  </body>
+</html>

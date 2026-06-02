@@ -646,7 +646,7 @@
       `;
     }
     if (relation === "ancestor") {
-      return `<path d="${ribbonPath(curve, 11, 2.2)}" fill="url(#edgeAncestor)" opacity=".92"/><path d="${center}" fill="none" stroke="rgba(255,240,184,.72)" stroke-width="1.3" stroke-linecap="round"/>`;
+      return `<path d="${ribbonPath(curve, 11, 2.2)}" fill="url(#edgeAncestor)" opacity=".92"/><path d="${center}" fill="none" stroke="var(--tree-edge-highlight)" stroke-width="1.3" stroke-linecap="round"/>`;
     }
     if (relation === "descendant") {
       return `<path d="${ribbonPath(curve, 10, 1.8)}" fill="url(#edgeDescendant)" opacity=".9"/><path d="${center}" fill="none" stroke="rgba(255,80,18,.64)" stroke-width="1.15" stroke-linecap="round"/>`;
@@ -722,8 +722,8 @@
         const x2 = x1 + canvas.maxSequence * TRACK_OFFSET;
         return `
           <g class="track-rail">
-            <path d="M ${x1.toFixed(1)} ${TOP_PAD - 34} L ${x2.toFixed(1)} ${(canvas.currentY + 34).toFixed(1)}" stroke="rgba(255,137,31,.18)" stroke-width="1.1" stroke-dasharray="8 15"/>
-            <text x="${x1.toFixed(1)}" y="${TOP_PAD - 47}" fill="rgba(255,198,128,.68)" font-size="14" text-anchor="middle">设备 ${track + 1} / ${label}</text>
+            <path d="M ${x1.toFixed(1)} ${TOP_PAD - 34} L ${x2.toFixed(1)} ${(canvas.currentY + 34).toFixed(1)}" stroke="var(--tree-rail)" stroke-width="1.1" stroke-dasharray="8 15"/>
+            <text x="${x1.toFixed(1)}" y="${TOP_PAD - 47}" fill="var(--tree-muted-text)" font-size="14" text-anchor="middle">设备 ${track + 1} / ${label}</text>
           </g>
         `;
       })
@@ -736,8 +736,8 @@
     const x2 = canvas.stageWidth - 82;
     return `
       <g class="current-time">
-        <line x1="48" y1="${y.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#fff0b8" stroke-width="1.5" stroke-dasharray="10 9" opacity=".92"/>
-        <text x="54" y="${(y - 10).toFixed(1)}" fill="rgba(255,236,204,.82)" font-size="13">当前时间 / Current Time</text>
+        <line x1="48" y1="${y.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--tree-current)" stroke-width="1.5" stroke-dasharray="10 9" opacity=".92"/>
+        <text x="54" y="${(y - 10).toFixed(1)}" fill="var(--tree-text)" font-size="13">当前时间 / Current Time</text>
       </g>
     `;
   }
@@ -748,12 +748,12 @@
     const bottom = canvas.currentY;
     return `
       <g class="timeline-layer">
-        <path d="M ${x} ${top} L ${x} ${bottom}" stroke="rgba(116,121,118,.52)" stroke-width="4.4" stroke-linecap="round"/>
+        <path d="M ${x} ${top} L ${x} ${bottom}" stroke="var(--tree-rail)" stroke-width="4.4" stroke-linecap="round"/>
         <path d="M ${x} ${top} L ${x} ${bottom}" stroke="#ff8a14" stroke-width="2.1" stroke-linecap="round" filter="url(#lineGlow)"/>
         <path d="M ${x - 12} ${bottom - 13} L ${x} ${bottom + 10} L ${x + 12} ${bottom - 13} Z" fill="rgba(255,130,20,.18)" stroke="#ffd18b" stroke-width="2.2" stroke-linejoin="round" filter="url(#nodeGlow)"/>
-        <circle cx="${x}" cy="${bottom}" r="4.2" fill="#fff0b8" opacity=".86"/>
-        <text x="${x + 46}" y="${(bottom - 35).toFixed(1)}" fill="rgba(255,232,202,.9)" font-size="17" text-anchor="middle">时间线</text>
-        <text x="${x + 46}" y="${(bottom - 11).toFixed(1)}" fill="rgba(255,195,115,.76)" font-size="15" text-anchor="middle">timeline</text>
+        <circle cx="${x}" cy="${bottom}" r="4.2" fill="var(--tree-current)" opacity=".86"/>
+        <text x="${x + 46}" y="${(bottom - 35).toFixed(1)}" fill="var(--tree-text)" font-size="17" text-anchor="middle">时间线</text>
+        <text x="${x + 46}" y="${(bottom - 11).toFixed(1)}" fill="var(--tree-muted-text)" font-size="15" text-anchor="middle">timeline</text>
       </g>
     `;
   }
@@ -884,24 +884,24 @@
           <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
         </filter>
       </defs>
-      <text x="${chart.left}" y="30" fill="rgba(255,232,202,.92)" font-size="20" font-weight="700">总体趋势 / Overall Trend</text>
-      <text x="${chart.left}" y="49" fill="rgba(255,185,105,.62)" font-size="12">由孩子节点实时生成 / generated from visible child nodes</text>
+      <text x="${chart.left}" y="30" fill="var(--tree-text)" font-size="20" font-weight="700">总体趋势 / Overall Trend</text>
+      <text x="${chart.left}" y="49" fill="var(--tree-muted-text)" font-size="12">由孩子节点实时生成 / generated from visible child nodes</text>
       <g opacity=".22">
         ${Array.from({ length: yGridSteps + 1 }, (_, index) => {
           const y = chart.top + index * ((chart.bottom - chart.top) / yGridSteps);
-          return `<line x1="${chart.left}" y1="${y.toFixed(1)}" x2="${chart.right}" y2="${y.toFixed(1)}" stroke="rgba(255,151,31,.55)" stroke-width="1"/>`;
+          return `<line x1="${chart.left}" y1="${y.toFixed(1)}" x2="${chart.right}" y2="${y.toFixed(1)}" stroke="var(--tree-rail)" stroke-width="1"/>`;
         }).join("")}
         ${Array.from({ length: xGridSteps + 1 }, (_, index) => {
           const x = chart.left + index * ((chart.right - chart.left) / xGridSteps);
-          return `<line x1="${x.toFixed(1)}" y1="${chart.top}" x2="${x.toFixed(1)}" y2="${chart.bottom}" stroke="rgba(255,151,31,.34)" stroke-width="1"/>`;
+          return `<line x1="${x.toFixed(1)}" y1="${chart.top}" x2="${x.toFixed(1)}" y2="${chart.bottom}" stroke="var(--tree-rail)" stroke-width="1"/>`;
         }).join("")}
       </g>
-      <g class="axis-labels" fill="rgba(255,226,194,.78)" font-size="10">
+      <g class="axis-labels" fill="var(--tree-soft-text)" font-size="10">
         ${Array.from({ length: yGridSteps + 1 }, (_, index) => {
           const y = chart.top + index * ((chart.bottom - chart.top) / yGridSteps);
           const value = maxScore - index * ((maxScore - minScore) / yGridSteps);
           return `
-            <line x1="${chart.left - 5}" y1="${y.toFixed(1)}" x2="${chart.left}" y2="${y.toFixed(1)}" stroke="rgba(255,226,194,.7)" stroke-width="1"/>
+            <line x1="${chart.left - 5}" y1="${y.toFixed(1)}" x2="${chart.left}" y2="${y.toFixed(1)}" stroke="var(--tree-soft-text)" stroke-width="1"/>
             <text x="${chart.left - 10}" y="${(y + 3.5).toFixed(1)}" text-anchor="end">${value.toFixed(0)}</text>
           `;
         }).join("")}
@@ -910,7 +910,7 @@
           const tick = fmtAxisDate(minMs + (timeSpan * index) / xGridSteps);
           const anchor = index === 0 ? "start" : index === xGridSteps ? "end" : "middle";
           return `
-            <line x1="${x.toFixed(1)}" y1="${chart.bottom}" x2="${x.toFixed(1)}" y2="${chart.bottom + 5}" stroke="rgba(255,226,194,.7)" stroke-width="1"/>
+            <line x1="${x.toFixed(1)}" y1="${chart.bottom}" x2="${x.toFixed(1)}" y2="${chart.bottom + 5}" stroke="var(--tree-soft-text)" stroke-width="1"/>
             <text x="${x.toFixed(1)}" y="${chart.bottom + 18}" text-anchor="${anchor}">
               <tspan x="${x.toFixed(1)}">${tick.date}</tspan>
               <tspan x="${x.toFixed(1)}" dy="12">${tick.time}</tspan>
@@ -918,13 +918,13 @@
           `;
         }).join("")}
       </g>
-      <path d="M ${chart.left} ${chart.bottom} V ${chart.top - 2}" stroke="rgba(255,233,200,.86)" stroke-width="2.4" stroke-linecap="round"/>
-      <path d="M ${chart.left - 9} ${chart.top + 10} L ${chart.left} ${chart.top - 4} L ${chart.left + 9} ${chart.top + 10}" fill="none" stroke="rgba(255,233,200,.86)" stroke-width="2.4" stroke-linecap="round"/>
-      <path d="M ${chart.left} ${chart.bottom} H ${chart.right}" stroke="rgba(255,233,200,.86)" stroke-width="2.4" stroke-linecap="round"/>
-      <path d="M ${chart.right - 11} ${chart.bottom - 9} L ${chart.right + 4} ${chart.bottom} L ${chart.right - 11} ${chart.bottom + 9}" fill="none" stroke="rgba(255,233,200,.86)" stroke-width="2.4" stroke-linecap="round"/>
-      <text x="${(chart.left + chart.right) / 2}" y="${height - 12}" fill="rgba(255,226,194,.82)" font-size="11" text-anchor="middle">横轴：时间 / Time (Asia/Shanghai) · 1格=${xScale}</text>
-      <text x="15" y="${(chart.top + chart.bottom) / 2}" fill="rgba(255,226,194,.82)" font-size="11" text-anchor="middle" transform="rotate(-90 15 ${(chart.top + chart.bottom) / 2})">纵轴：得分 / Score (/100) · 1格=${yScale}分</text>
-      ${selected ? `<line x1="${selected.x.toFixed(1)}" y1="${chart.top}" x2="${selected.x.toFixed(1)}" y2="${chart.bottom}" stroke="#fff0b8" stroke-width="1.5" stroke-dasharray="6 7"/>` : ""}
+      <path d="M ${chart.left} ${chart.bottom} V ${chart.top - 2}" stroke="var(--tree-axis)" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M ${chart.left - 9} ${chart.top + 10} L ${chart.left} ${chart.top - 4} L ${chart.left + 9} ${chart.top + 10}" fill="none" stroke="var(--tree-axis)" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M ${chart.left} ${chart.bottom} H ${chart.right}" stroke="var(--tree-axis)" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M ${chart.right - 11} ${chart.bottom - 9} L ${chart.right + 4} ${chart.bottom} L ${chart.right - 11} ${chart.bottom + 9}" fill="none" stroke="var(--tree-axis)" stroke-width="2.4" stroke-linecap="round"/>
+      <text x="${(chart.left + chart.right) / 2}" y="${height - 12}" fill="var(--tree-soft-text)" font-size="11" text-anchor="middle">横轴：时间 / Time (Asia/Shanghai) · 1格=${xScale}</text>
+      <text x="15" y="${(chart.top + chart.bottom) / 2}" fill="var(--tree-soft-text)" font-size="11" text-anchor="middle" transform="rotate(-90 15 ${(chart.top + chart.bottom) / 2})">纵轴：得分 / Score (/100) · 1格=${yScale}分</text>
+      ${selected ? `<line x1="${selected.x.toFixed(1)}" y1="${chart.top}" x2="${selected.x.toFixed(1)}" y2="${chart.bottom}" stroke="var(--tree-current)" stroke-width="1.5" stroke-dasharray="6 7"/>` : ""}
       ${area ? `<path d="${area}" fill="url(#chartArea)"/>` : ""}
       <path d="${path}" fill="none" stroke="rgba(255,100,0,.25)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#chartGlow)"/>
       <path d="${path}" fill="none" stroke="url(#chartLine)" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1091,7 +1091,7 @@
   restartPlayback.addEventListener("click", () => startPlayback(true));
   speedSelect.addEventListener("change", (event) => {
     const now = currentMs();
-      playbackSpeed = Number(event.target.value);
+    playbackSpeed = Number(event.target.value);
     if (playbackMode) {
       playbackBaseMs = now;
       playbackStartedAt = Date.now();
@@ -1116,6 +1116,7 @@
     }
   });
   window.addEventListener("resize", () => renderAll(true));
+  window.addEventListener("child-theme-change", () => renderAll(true));
 
   renderAll(true);
   function animationLoop(timestamp) {

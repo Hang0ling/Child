@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>调试台 Debug Console</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="../nav.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem("child-theme") || "dark";
+      } catch {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css?v=debug-title-controls-11" />
+    <link rel="stylesheet" href="../nav.css?v=theme-icon-2" />
   </head>
   <body>
     <main class="debug-stage" aria-label="调试台界面">
@@ -16,12 +23,15 @@
 
       <section class="left-stack">
         <article class="debug-card definition-card">
-          <header>
+          <div class="side-kicker">
+            <span>当前调试模块</span>
             <button class="module-select" id="moduleToggle" type="button" aria-expanded="false">
               <span class="chip-icon grid-icon" aria-hidden="true"></span>
               <b id="moduleName">合成LLM</b>
               <i>∨</i>
             </button>
+          </div>
+          <header>
             <time id="updatedAt">最近更新：2026/5/18 15:38</time>
           </header>
           <div class="module-menu" id="moduleMenu"></div>
@@ -29,13 +39,15 @@
         </article>
 
         <article class="debug-card io-card">
-          <header>
-            <button class="module-select compact" type="button">
+          <div class="side-kicker">
+            <span>输入内容</span>
+            <button class="module-select compact" id="inputToggle" type="button" aria-expanded="false">
               <span class="chip-icon input-icon" aria-hidden="true"></span>
               <b>输入</b>
               <i>∨</i>
             </button>
-          </header>
+          </div>
+          <div class="input-menu" id="inputMenu"></div>
           <div class="short-copy editable-copy" id="inputCopy" contenteditable="true">
             <p>这里是一个统一的输入测试用例。也可以手动编辑。也有多个版本。</p>
             <p>这里是一个统一的输入测试用例。也可以手动编辑。也有多个版本。</p>
@@ -44,14 +56,7 @@
         </article>
 
         <article class="debug-card output-card">
-          <header>
-            <button class="module-select compact" type="button">
-              <span class="chip-icon output-icon" aria-hidden="true"></span>
-              <b>输出</b>
-              <i>∨</i>
-            </button>
-            <span class="header-note">运行的信息，比如运行时间等。</span>
-          </header>
+          <div class="side-kicker">输出内容</div>
           <div class="short-copy" id="outputCopy">
             <p>这里是右边程序产生的真实的输出结果。</p>
             <p>这里是右边程序产生的真实的输出结果。</p>
@@ -61,13 +66,7 @@
         </article>
 
         <article class="debug-card check-card">
-          <header>
-            <button class="module-select compact" type="button">
-              <span class="chip-icon check-icon" aria-hidden="true"></span>
-              <b>智能检测</b>
-            </button>
-            <span class="loading-dots">•••••</span>
-          </header>
+          <div class="side-kicker">智能检测</div>
           <div class="check-list" id="checkList"></div>
         </article>
       </section>
@@ -75,17 +74,16 @@
       <aside class="date-rail frame-panel" aria-label="版本日期">
         <label class="debug-search">
           <span class="search-icon" aria-hidden="true"></span>
-          <input id="versionSearch" type="search" placeholder="搜索" />
+          <input id="versionSearch" type="search" placeholder="搜索历史版本" />
         </label>
         <div class="date-list" id="dateList"></div>
       </aside>
 
       <section class="version-panel frame-panel" aria-label="版本内容">
         <header class="panel-title">
-          <span class="doc-icon" aria-hidden="true"></span>
           <div>
-            <h1>版本内容</h1>
-            <small>VERSION CONTENT</small>
+            <h1>当前版本</h1>
+            <small>GENERATION PROCESS</small>
           </div>
         </header>
         <div class="long-copy" id="versionCopy"></div>
@@ -93,10 +91,9 @@
 
       <section class="current-panel frame-panel" aria-label="当前测试内容">
         <header class="panel-title">
-          <span class="doc-icon code-icon" aria-hidden="true"></span>
           <div>
-            <h1>当前测试内容</h1>
-            <small>CURRENT TEST CONTENT</small>
+            <h1>正在修改版本</h1>
+            <small>FILE RESULT</small>
           </div>
         </header>
         <div class="long-copy test-copy" id="testCopy" contenteditable="true"></div>
@@ -111,12 +108,14 @@
     <nav class="bottom-page-nav" aria-label="页面导航">
       <div class="bottom-nav-rail">
         <a href="../index.html">进化树</a>
+        <a href="../监视器/index.html">监视器</a>
         <a href="../Child-流程图/index.html">流程图</a>
         <a href="../日志查看/index.html">日志查看</a>
-        <a class="is-active" href="./index.html">调试台</a>
+        <a class="is-active" href="./index.html?v=debug-title-controls-11">调试台</a>
       </div>
     </nav>
 
-    <script src="./script.js"></script>
+    <script src="../theme.js?v=theme-icon-1"></script>
+    <script src="./script.js?v=debug-title-controls-11"></script>
   </body>
 </html>
